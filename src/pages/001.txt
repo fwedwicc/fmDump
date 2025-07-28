@@ -1,3 +1,5 @@
+FINISHED: 001
+
 import React from 'react'
 import { TbMoonFilled, TbSparkles } from "react-icons/tb"
 
@@ -30,3 +32,8 @@ const Canvas = () => {
 }
 
 export default Canvas
+
+
+Reference:
+
+https://www.instagram.com/p/DHtlhhoNlwq/?img_index=1&epik=dj0yJnU9aUpoRDJVSURtX3VrR0czejhwa1NfaF9uWHl4OFFORXEmcD0wJm49OEFPVklkRXc0WjZzSHNrN21UUkhQdyZ0PUFBQUFBR2lITkpR
