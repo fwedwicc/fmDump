@@ -1,29 +1,31 @@
 import React from 'react'
-import { TbMoonFilled, TbSparkles } from "react-icons/tb"
 
 const Canvas = () => {
   return (
     <section className='relative h-screen overflow-hidden bg-neutral-100 grid place-content-center'>
-      <div className='z-10 absolute -translate-x-1/2 left-1/2 -translate-y-1/2 top-1/2 w-md mt-8 h-[25rem] bg-neutral-900/10 blur-2xl' />
-      <div className='z-20 p-6 rounded-[2.7rem] bg-neutral-800 shadow-2xl shadow-neutral-950/60'>
-        <div className='m-2 p-3 rounded-full size-70 bg-gradient-to-b from-neutral-700/70 to-neutral-900/50 saturate-80'>
-          <div className='p-3 size-full rounded-full bg-neutral-900 shadow-2xl shadow-neutral-900/80'>
-            <div className='rounded-full size-full bg-gradient-to-b from-violet-400/50 to-violet-700/20 p-[1.6px]'>
-              <div className='size-full rounded-full grid place-content-center bg-neutral-900/60'>
-                <TbMoonFilled className='size-36 text-violet-400/70 blur-md' />
-              </div>
+      <div className='flex flex-col gap-y-10 bg-white w-sm rounded-4xl p-7 shadow-2xl shadow-neutral-900/20'>
+        <div className='flex justify-between items-center'>
+          <div className='size-10 border rounded-lg'></div>
+          <div className='size-10 border rounded-lg'></div>
+        </div>
+        <div className='flex flex-col gap-y-1.5'>
+          <span className='text-base font-semibold text-neutral-700'>Apple <span className='text-xs font-thin text-neutral-400'>7 days ago</span></span>
+          <span className='text-xl font-semibold text-neutral-700'>Senior Design Engineer</span>
+          <div className='mt-2 flex gap-2'>
+            <span className='px-2.5 py-1 text-xs bg-neutral-200/80 rounded-lg text-neutral-600 font-medium'>Full time</span>
+            <span className='px-2.5 py-1 text-xs bg-neutral-200/80 rounded-lg text-neutral-600 font-medium'>Hybrid mode</span>
+          </div>
+        </div>
+        <button className='bg-neutral-800 p-[5px] rounded-3xl shadow-xl shadow-neutral-500/50'>
+          <div className='w-full p-[1px] bg-neutral-900 rounded-[20px]'>
+            <div className='relative w-full p-3 bg-neutral-900 rounded-[20px] text-lg text-neutral-300/80 text-shadow-lg shadow-black'>
+              <div className='absolute w-[87%] top-2 h-2 bg-neutral-200/80 blur-sm' />
+              <div className='absolute w-1 right-2 top-2 h-10 bg-neutral-200/30 blur-xs' />
+              <div className='absolute w-1 right-2 top-2 h-10 bg-neutral-300/30 blur-sm' />
+              Apply now
             </div>
           </div>
-        </div>
-        <div className='flex justify-between items-end mt-3.5 p-1'>
-          <div className='flex flex-col'>
-            <span className='text-xl font-medium text-zinc-100'>Zen Mode</span>
-            <span className='text-sm font-medium text-zinc-400'>Active</span>
-          </div>
-          <div className='bg-violet-400/10 p-4 rounded-full saturate-90'>
-            <TbSparkles className='size-6.5 text-violet-400 saturate-50' />
-          </div>
-        </div>
+        </button>
       </div>
     </section>
   )
