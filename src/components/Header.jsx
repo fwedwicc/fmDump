@@ -19,7 +19,7 @@ const Header = () => {
           {/* Left Content */}
           <div className='space-y-2'>
             <h1>fmDump_</h1>
-            <p className='w-full max-w-xs text-pretty'>Lorem ipsum dolor sit amet conlor sit amet clor sitetur elit. Qui sunt suscipit iste molestiae odio.</p>
+            <p className='w-full max-w-xs text-pretty'>Brilliant designers can't code their designs, so I did :) <br />~ Just me, boredom, and some UI replicas. </p>
           </div>
         </div>
 
@@ -44,7 +44,7 @@ const Header = () => {
         </div>
       </div>
 
-    </header>
+    </header >
   )
 }
 
