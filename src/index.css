@@ -7,12 +7,15 @@
   body {
     @apply bg-zinc-100;
   }
-  p,
-  span {
+  p {
     font-family: "Poppins", sans-serif;
     font-weight: 400;
     font-style: normal;
     @apply text-xs text-zinc-700;
+  }
+  span {
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
   }
   h1,
   h2,
@@ -49,4 +52,13 @@
   .flex-center {
     @apply flex items-center justify-center;
   }
+}
+
+/* Test */
+.gradient-bg {
+  background: linear-gradient(
+    190deg,
+    rgba(20, 20, 20, 0) 70%,
+    rgb(56, 56, 56) 100%
+  );
 }
