@@ -1,9 +1,10 @@
 import React from 'react'
 import { useParams } from 'react-router-dom'
-import { UI001 } from '../components/dumps'
+import { UI001, UI002 } from '../components/dumps'
 
 const componentMap = {
-  ui001: UI001
+  ui001: UI001,
+  ui002: UI002
 }
 
 const ViewUI = () => {

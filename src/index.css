@@ -53,12 +53,3 @@
     @apply flex items-center justify-center;
   }
 }
-
-/* Test */
-.gradient-bg {
-  background: linear-gradient(
-    190deg,
-    rgba(20, 20, 20, 0) 70%,
-    rgb(56, 56, 56) 100%
-  );
-}

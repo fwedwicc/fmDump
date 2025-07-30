@@ -1,7 +1,7 @@
 import React from 'react'
 import { TbMoonFilled, TbSparkles } from "react-icons/tb"
 
-const UI001 = () => {
+const UI002 = () => {
   return (
     <>
       <div className='z-10 absolute -translate-x-1/2 left-1/2 -translate-y-1/2 top-1/2 w-md mt-8 h-[25rem] bg-neutral-900/10 blur-2xl' />
@@ -29,4 +29,4 @@ const UI001 = () => {
   )
 }
 
-export default UI001
+export default UI002
