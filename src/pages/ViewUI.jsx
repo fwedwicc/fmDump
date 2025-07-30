@@ -26,7 +26,7 @@ const ViewUI = () => {
         transition={{
           type: 'spring',
           stiffness: 150,
-          damping: 15,
+          damping: 13,
           mass: 1,
         }}
       >
