@@ -4,7 +4,7 @@ import { FaApple } from "react-icons/fa"
 
 const UI001 = () => {
   return (
-    <>
+    <div className='bg-neutral-100'>
       <div className='flex flex-col gap-y-13 bg-white w-sm rounded-[38px] p-7 shadow-2xl shadow-neutral-400/60'>
         <div className='flex justify-between items-center'>
           <div className='relative grid place-content-center size-12 bg-neutral-800 rounded-xl overflow-hidden'>
@@ -44,7 +44,7 @@ const UI001 = () => {
           </button>
         </div>
       </div>
-    </>
+    </div>
   )
 }
 

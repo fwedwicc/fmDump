@@ -3,7 +3,7 @@ import { TbMoonFilled, TbSparkles } from "react-icons/tb"
 
 const UI002 = () => {
   return (
-    <>
+    <div className='bg-neutral-100'>
       <div className='z-10 absolute -translate-x-1/2 left-1/2 -translate-y-1/2 top-1/2 w-md mt-8 h-[25rem] bg-neutral-900/10 blur-2xl' />
       <div className='z-20 p-6 rounded-[2.7rem] bg-neutral-800 shadow-2xl shadow-neutral-950/60'>
         <div className='m-2 p-3 rounded-full size-70 bg-gradient-to-b from-neutral-700/70 to-neutral-900/50 saturate-80'>
@@ -25,7 +25,7 @@ const UI002 = () => {
           </div>
         </div>
       </div>
-    </>
+    </div>
   )
 }
 
