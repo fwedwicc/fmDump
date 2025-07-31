@@ -5,7 +5,6 @@ import { TbBrandLinkedin, TbBrandDribbble, TbBrandBehance, TbBrandGithub } from 
 const Header = () => {
   return (
     <header className='fixed z-50 top-0 w-full p-4 bg-zinc-100/80 backdrop-blur-xl'>
-
       <div className='flex justify-between items-start'>
         <div className='flex items-center gap-x-5'>
           {/* Logo */}
@@ -15,36 +14,30 @@ const Header = () => {
               <img src={FMLogo} alt="FM Logo" className='w-6 h-auto' />
             </div>
           </div>
-
           {/* Left Content */}
           <div className='space-y-2'>
             <h1>fmDump_</h1>
             <p className='w-full max-w-xs text-pretty'>Brilliant designers can't code their designs, so I did :) <br />~ Just me, boredom, and some UI replicas. </p>
           </div>
         </div>
-
         {/* Right Content */}
-        <div className='grid grid-cols-3 gap-1'>
-          <div className='bg-zinc-200/30 p-3 grid place-content-center rounded-xl'>
-            <TbBrandBehance className='size-4 text-zinc-600' />
+        <div className='flex flex-col items-end gap-3'>
+          <a href='https://buymeacoffee.com/fwedwicc' target='_blank' rel='noopener noreferrer' className='py-3.5 px-4.5 bg-zinc-800 hover:bg-zinc-900 text-zinc-200 rounded-[14px] text-xs leading-none shadow-lg shadow-zinc-500/30 active:scale-95 cursor-pointer transition-smooth'>Buy me a coffee</a>
+          <div className='flex gap-1'>
+            {[
+              { icon: TbBrandGithub, link: 'https://github.com/fwedwicc' },
+              { icon: TbBrandDribbble, link: 'https://dribbble.com/fwedwic' },
+              { icon: TbBrandBehance, link: 'https://www.behance.net/fwedwicc' },
+              { icon: TbBrandLinkedin, link: 'https://www.linkedin.com/in/frederick-moreno/' },
+            ].map((item, index) => (
+              <a href={item.link} target='_blank' rel='noopener noreferrer' className='hover:bg-zinc-200/30 transition-smooth p-2.5 grid place-content-center rounded-xl' key={index}>
+                <item.icon className='size-4 text-zinc-600' />
+              </a>
+            ))}
           </div>
-          <div className='bg-zinc-200/30 p-3 grid place-content-center rounded-xl'>
-            <TbBrandDribbble className='size-4 text-zinc-600' />
-          </div>
-          <div className='bg-zinc-200/30 p-3 grid place-content-center rounded-xl'>
-            <TbBrandLinkedin className='size-4 text-zinc-600' />
-          </div>
-          <div className='bg-zinc-200/30 p-3 grid place-content-center rounded-xl'>
-            <TbBrandGithub className='size-4 text-zinc-600' />
-          </div>
-          {/* <div className='bg-zinc-200/30 p-2 grid place-content-center rounded-xl'>
-          <TbBrandGithub className='size-5 text-zinc-600' />
-        </div> */}
-          <div className='bg-zinc-200/40 p-5 rounded-xl col-span-2'></div>
         </div>
       </div>
-
-    </header >
+    </header>
   )
 }
 
