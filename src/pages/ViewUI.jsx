@@ -1,20 +1,13 @@
 import React from 'react'
 import { useParams } from 'react-router-dom'
 import { motion } from 'framer-motion'
-import { UI001, UI002, UI003 } from '../components/dumps'
 import { Data } from '../data'
-
-const componentMap = {
-  ui001: UI001,
-  ui002: UI002,
-  ui003: UI003,
-}
 
 const ViewUI = () => {
   const { id } = useParams()
-  const ComponentToRender = componentMap[id]
-
   const matchedData = Data.find((item) => item.id === id)
+  const ComponentToRender = matchedData?.UI
+
   return (
     <>
       <motion.section
@@ -36,7 +29,7 @@ const ViewUI = () => {
           {ComponentToRender ? <ComponentToRender /> : <p>UI not found</p>}
         </motion.div>
       </motion.section>
-      {/* Datasss */}
+      {/* This is just initial fetch hehe (no design) */}
       <div className='border p-4 space-y-2'>
         {matchedData ? (
           <>
