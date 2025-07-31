@@ -1,7 +1,7 @@
-import React, { useState } from 'react'
+import React from 'react'
 import { motion } from 'framer-motion'
 import { Header, CardItem, Footer } from '../components'
-import { Thumbnail001, Thumbnail002 } from '../assets/thumbnails'
+import { Data } from '../data'
 
 const Home = () => {
   return (
@@ -15,20 +15,15 @@ const Home = () => {
       <main className='px-4 mt-30'>
         {/* Content */}
         <div className='grid grid-cols-4 gap-2 p-2 bg-zinc-200/50 rounded-4xl'>
-          {/* 001 */}
-          <CardItem
-            to='/view/ui001'
-            thumbnail={Thumbnail001}
-            title="001"
-            label="Apple card"
-          />
-          {/* 002 */}
-          <CardItem
-            to='/view/ui002'
-            thumbnail={Thumbnail002}
-            title="002"
-            label="Skeumorphism"
-          />
+          {Data.map((item, index) => (
+            <CardItem
+              key={index}
+              to={item.to}
+              thumbnail={item.thumbnail}
+              title={item.title}
+              label={item.label}
+            />
+          ))}
         </div>
       </main>
       <Footer />
