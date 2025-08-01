@@ -1,10 +1,12 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import { motion } from 'framer-motion'
-import { Header, CardItem, Footer } from '../components'
+import { Header, CardItem, Tooltip, Footer } from '../components'
 import { Data } from '../data'
 import { HiBeaker } from "react-icons/hi"
 
 const Home = () => {
+
   return (
     <motion.div
       initial={{ opacity: 0 }}
@@ -28,15 +30,11 @@ const Home = () => {
         </div>
         {/* Link to canvas */}
         <div className='fixed bottom-6 right-6'>
-          <div className='relative'>
-            <button className='flex-center size-13 rounded-full button-primary'>
+          <Tooltip styles='-translate-y-1/2 top-1/2 w-[11.5rem] right-17' content="Take a peek at Frederick's ongoing experiments :)">
+            <Link to='/canvas' className='flex-center size-13 rounded-[17px] button-primary'>
               <HiBeaker className='size-5 stroke-[0.1px]' />
-            </button>
-            {/* Tooltip */}
-            <div className='absolute -translate-y-1/2 top-1/2 w-[11.5rem] right-17 px-3.5 rounded-2xl py-3 border border-zinc-200 bg-zinc-100 shadow-lg shadow-zinc-300/30'>
-              <p>Take a peek at Frederick’s ongoing experiments :)</p>
-            </div>
-          </div>
+            </Link>
+          </Tooltip>
         </div>
       </main>
       <Footer />
