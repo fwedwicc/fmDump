@@ -22,7 +22,7 @@ const Header = () => {
         </div>
         {/* Right Content */}
         <div className='flex flex-col items-end gap-3'>
-          <a href='https://buymeacoffee.com/fwedwicc' target='_blank' rel='noopener noreferrer' className='py-3.5 px-4.5 bg-zinc-800 hover:bg-zinc-900 text-zinc-200 rounded-[14px] text-xs leading-none shadow-lg shadow-zinc-500/30 active:scale-95 cursor-pointer transition-smooth'>Buy me a coffee</a>
+          <a href='https://buymeacoffee.com/fwedwicc' target='_blank' rel='noopener noreferrer' className='button-primary'>Buy me a coffee</a>
           <div className='flex gap-1'>
             {[
               { icon: TbBrandGithub, link: 'https://github.com/fwedwicc' },
