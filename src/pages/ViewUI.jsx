@@ -1,14 +1,15 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Link, useParams } from 'react-router-dom'
 import { motion } from 'framer-motion'
-import { ViewWrapper, Tooltip } from '../components'
-import { TbSmartHome } from "react-icons/tb"
+import { ViewWrapper, Modal, Tooltip } from '../components'
+import { TbSmartHome, TbInfoSquareRounded } from "react-icons/tb"
 import { Data } from '../data'
 
 const ViewUI = () => {
   const { id } = useParams()
   const matchedData = Data.find((item) => item.id === id)
   const ComponentToRender = matchedData?.UI
+  const [openInfoModal, setOpenInfoModal] = useState(false)
 
   return (
     <motion.section
@@ -21,17 +22,23 @@ const ViewUI = () => {
         {ComponentToRender ? <ComponentToRender /> : <p>UI not found</p>}
       </ViewWrapper>
       {/* Source Code & Info button */}
-      <div className='fixed top-6 left-6 flex items-center gap-3'>
-        <button className='button-base button-primary'>Source code</button>
-        <Tooltip styles='-translate-y-1/2 top-1/2 text-nowrap left-17' content="Back to home" animation={-8}>
-          <Link to='/' className='flex-center size-13 rounded-[17px] transition-smooth button-secondary'>
-            <TbSmartHome className='size-4.5 stroke-[2px]' />
-          </Link>
+      <div className='fixed top-6 left-6 flex items-center gap-5'>
+        <button className='button-base button-primary'>
+          Source code
+        </button>
+        <Tooltip styles='-translate-y-1/2 top-1/2 text-nowrap left-8' content="Infos" animation={-8}>
+          <button className='cursor-pointer' onClick={() => setOpenInfoModal(true)}>
+            <TbInfoSquareRounded className='size-4.5 stroke-[2px] text-neutral-800' />
+          </button>
         </Tooltip>
       </div>
+      {/* Info Modal */}
+      <Modal isOpen={openInfoModal} onClose={() => setOpenInfoModal(false)}>
+        <p>{matchedData.credits}</p>
+      </Modal>
       {/* Back to home button */}
       <div className='fixed bottom-6 right-6'>
-        <Tooltip styles='-translate-y-1/2 top-1/2 text-nowrap right-17' content="Back to home" animation={8}>
+        <Tooltip styles='-translate-y-1/2 top-1/2 text-nowrap right-17' content="Home" animation={8}>
           <Link to='/' className='flex-center size-13 rounded-[17px] transition-smooth button-secondary'>
             <TbSmartHome className='size-4.5 stroke-[2px]' />
           </Link>
