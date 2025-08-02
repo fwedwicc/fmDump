@@ -13,7 +13,8 @@
     font-style: normal;
     @apply text-xs text-zinc-700;
   }
-  span {
+  span,
+  button {
     font-family: "Poppins", sans-serif;
     font-style: normal;
   }
