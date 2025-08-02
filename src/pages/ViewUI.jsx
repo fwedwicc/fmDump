@@ -1,6 +1,8 @@
 import React from 'react'
-import { useParams } from 'react-router-dom'
+import { Link, useParams } from 'react-router-dom'
 import { motion } from 'framer-motion'
+import { Tooltip } from '../components'
+import { TbSmartHome } from "react-icons/tb"
 import { Data } from '../data'
 
 const ViewUI = () => {
@@ -27,6 +29,13 @@ const ViewUI = () => {
       >
         {ComponentToRender ? <ComponentToRender /> : <p>UI not found</p>}
       </motion.div>
+      <div className='fixed bottom-6 right-6'>
+        <Tooltip styles='-translate-y-1/2 top-1/2 text-nowrap right-17' content="Back to home :)">
+          <Link to='/' className='flex-center size-13 rounded-[17px] transition-smooth button-secondary'>
+            <TbSmartHome className='size-4.5 stroke-[2px]' />
+          </Link>
+        </Tooltip>
+      </div>
     </motion.section>
   )
 }

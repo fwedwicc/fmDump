@@ -1,6 +1,8 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import { motion } from 'framer-motion'
-import { TbAlarm, TbFlame, TbCirclePlus, TbCopy } from "react-icons/tb"
+import { Tooltip } from '../components'
+import { TbAlarm, TbFlame, TbCirclePlus, TbCopy, TbSmartHome } from "react-icons/tb"
 
 const Canvas = () => {
   return (
@@ -10,6 +12,7 @@ const Canvas = () => {
       transition={{ duration: 0.4, ease: 'easeOut' }}
       className='relative h-screen overflow-hidden bg-neutral-100 grid place-content-center'
     >
+      {/* ------------------------ PLAYGROUND ------------------------ */}
       <div className='relative flex flex-col items-center justify-center pb-3 bg-lime-300/90 shadow-2xl shadow-neutral-300/60 rounded-[43px] space-y-2.5 overflow-hidden'>
         <div className='absolute -bottom-2.5 w-full h-full rounded-[43px] border-b-[2px] border-x-[1px] blur-[2px] border-x-lime-600/40 border-b-lime-600/40' />
         <div className='relative flex flex-col gap-y-6.5 w-md p-7 rounded-[43px] bg-neutral-900 shadow-xl shadow-neutral-800/20 text-neutral-200 overflow-hidden'>
@@ -47,6 +50,15 @@ const Canvas = () => {
           <TbFlame className='size-4.5 stroke-[1.9px] text-neutral-800' />
           Currently high on creativity
         </span>
+      </div>
+      {/* ------------------------ // PLAYGROUND ------------------------ */}
+      {/* IGNORE: Back Button */}
+      <div className='fixed bottom-6 right-6'>
+        <Tooltip styles='-translate-y-1/2 top-1/2 text-nowrap right-17' content="Back to home :)">
+          <Link to='/' className='flex-center size-13 rounded-[17px] button-secondary'>
+            <TbSmartHome className='size-4.5 stroke-[2px]' />
+          </Link>
+        </Tooltip>
       </div>
     </motion.section>
   )
