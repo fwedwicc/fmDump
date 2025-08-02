@@ -30,7 +30,7 @@ const Home = () => {
         </div>
         {/* Link to canvas */}
         <div className='fixed bottom-6 right-6'>
-          <Tooltip styles='-translate-y-1/2 top-1/2 w-[11.5rem] right-17' content="Take a peek at Frederick's ongoing experiments :)">
+          <Tooltip styles='-translate-y-1/2 top-1/2 w-[11.5rem] right-17' content="Take a peek at Frederick's ongoing experiments :)" animation={8}>
             <Link to='/canvas' className='flex-center size-13 rounded-[17px] transition-smooth button-primary'>
               <HiBeaker className='size-4 stroke-[0.1px]' />
             </Link>

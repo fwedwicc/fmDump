@@ -17,7 +17,7 @@ const ViewWrapper = ({ children, designWidth = 1024 }) => {
     if (baseRatio < 1) {
       computed = baseRatio + (1 - baseRatio) * 0.5
     }
-    computed = Math.min(1.1, Math.max(0.5, computed)) // clamp between 0.5 and 1.1
+    computed = Math.min(1, Math.max(0.5, computed)) // clamp between 0.5 and 1.1
 
     setScale(computed)
   }, [designWidth])

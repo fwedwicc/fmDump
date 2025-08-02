@@ -22,8 +22,8 @@ const ViewUI = () => {
       </ViewWrapper>
       {/* Source Code & Info button */}
       <div className='fixed top-6 left-6 flex items-center gap-3'>
-        {/* <button className='button-base button-primary'>Source Code</button> */}
-        <Tooltip styles='-translate-y-1/2 top-1/2 text-nowrap left-17' content="Back to home :)">
+        <button className='button-base button-primary'>Source code</button>
+        <Tooltip styles='-translate-y-1/2 top-1/2 text-nowrap left-17' content="Back to home" animation={-8}>
           <Link to='/' className='flex-center size-13 rounded-[17px] transition-smooth button-secondary'>
             <TbSmartHome className='size-4.5 stroke-[2px]' />
           </Link>
@@ -31,7 +31,7 @@ const ViewUI = () => {
       </div>
       {/* Back to home button */}
       <div className='fixed bottom-6 right-6'>
-        <Tooltip styles='-translate-y-1/2 top-1/2 text-nowrap right-17' content="Back to home :)">
+        <Tooltip styles='-translate-y-1/2 top-1/2 text-nowrap right-17' content="Back to home" animation={8}>
           <Link to='/' className='flex-center size-13 rounded-[17px] transition-smooth button-secondary'>
             <TbSmartHome className='size-4.5 stroke-[2px]' />
           </Link>

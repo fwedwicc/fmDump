@@ -18,7 +18,7 @@ const Canvas = () => {
         <div className='relative flex flex-col gap-y-6.5 w-md p-7 rounded-[43px] bg-neutral-900 shadow-xl shadow-neutral-800/20 text-neutral-200 overflow-hidden'>
           <div className='absolute w-76 h-100 top-0 -right-24 rotate-20 bg-neutral-700/60 blur-[8rem] z-10' />
           <div className='flex-between z-20'>
-            <span className='text-neutral-400/80 text-[13px]'>Desinger & Developer</span>
+            <span className='text-neutral-400/80 text-[13px]'>Designer & Developer</span>
             <span className='flex items-center gap-1 text-neutral-400/80 text-[13px]'>
               <TbAlarm className='size-5 stroke-[1.5px]' />
               7:15PM
@@ -54,7 +54,7 @@ const Canvas = () => {
       {/* ------------------------ // PLAYGROUND ------------------------ */}
       {/* IGNORE: Back Button */}
       <div className='fixed bottom-6 right-6'>
-        <Tooltip styles='-translate-y-1/2 top-1/2 text-nowrap right-17' content="Back to home :)">
+        <Tooltip styles='-translate-y-1/2 top-1/2 text-nowrap right-17' content="Back to home" animation={8}>
           <Link to='/' className='flex-center size-13 rounded-[17px] button-secondary'>
             <TbSmartHome className='size-4.5 stroke-[2px]' />
           </Link>

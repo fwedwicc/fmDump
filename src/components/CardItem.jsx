@@ -26,13 +26,13 @@ const CardItem = ({ to, thumbnail, title, label }) => {
               stiffness: 200,
               damping: 14,
             }}
-            className="flex-between items-center px-4 pt-2.5 pb-3.5 bg-zinc-100/50 rounded-[20px] border border-zinc-400/20 backdrop-blur-xl"
+            className="relative flex-start px-4 pt-2 pb-4.5 bg-zinc-100/50 rounded-[20px] border border-zinc-400/20 backdrop-blur-xl"
           >
             <div>
               <h3>{title}</h3>
               <p>{label}</p>
             </div>
-            <TbArrowUpRight className="size-13 stroke-[0.6] text-zinc-900" />
+            <TbArrowUpRight className="absolute -translate-y-1/2 top-1/2 right-2.5 size-12 stroke-[0.8] text-zinc-900" />
           </motion.div>
         </div>
       </motion.div>

@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { motion } from 'framer-motion'
 
-const Tooltip = ({ children, content, styles }) => {
+const Tooltip = ({ children, content, styles, animation }) => {
   const [hovered, setHovered] = useState(false)
 
   return (
@@ -12,11 +12,11 @@ const Tooltip = ({ children, content, styles }) => {
     >
       {children}
       <motion.div
-        initial={{ opacity: 0, x: 8, scale: 0.95 }}
+        initial={{ opacity: 0, x: animation, scale: 0.95 }}
         animate={
           hovered
             ? { opacity: 1, x: 0, scale: 1 }
-            : { opacity: 0, x: 8, scale: 0.95 }
+            : { opacity: 0, x: animation, scale: 0.95 }
         }
         transition={{
           type: 'spring',
