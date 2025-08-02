@@ -2,10 +2,12 @@ import Header from './Header'
 import Footer from './Footer'
 import CardItem from './CardItem'
 import Tooltip from './Tooltip'
+import ViewWrapper from './ViewWrapper'
 
 export {
   Header,
   Footer,
   CardItem,
-  Tooltip
+  Tooltip,
+  ViewWrapper
 }
