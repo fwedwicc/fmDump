@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import { Link, useParams } from 'react-router-dom'
 import { motion } from 'framer-motion'
 import { ViewWrapper, Modal, Tooltip } from '../components'
-import { TbSmartHome, TbInfoSquareRounded } from "react-icons/tb"
+import { TbSmartHome, TbInfoSquareRounded, TbArrowUpRight } from "react-icons/tb"
 import { Data } from '../data'
 
 const ViewUI = () => {
@@ -33,8 +33,21 @@ const ViewUI = () => {
         </Tooltip>
       </div>
       {/* Info Modal */}
-      <Modal isOpen={openInfoModal} onClose={() => setOpenInfoModal(false)}>
-        <p>{matchedData.credits}</p>
+      <Modal isOpen={openInfoModal} onClose={() => setOpenInfoModal(false)} size='max-w-md'>
+        <div className='space-y-6'>
+          <div className='space-y-2'>
+            <p>{matchedData.title}</p>
+            <h2>{matchedData.label}</h2>
+            <p>{matchedData.desc}</p>
+          </div>
+          <div className='pt-4 space-y-3 border-t border-zinc-100'>
+            <h4>Reference</h4>
+            <a href={matchedData.credits} target='_blank' rel='noopener noreferrer' className='flex items-center' >
+              <p>{matchedData.credits}</p>
+              <TbArrowUpRight className='stroke-[1.2px] size-5.5 text-zinc-600' />
+            </a>
+          </div>
+        </div>
       </Modal>
       {/* Back to home button */}
       <div className='fixed bottom-6 right-6'>

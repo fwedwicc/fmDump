@@ -1,7 +1,8 @@
 import React from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
+import { HiOutlineX } from "react-icons/hi"
 
-const Modal = ({ isOpen, onClose, children }) => {
+const Modal = ({ isOpen, onClose, size, children }) => {
   return (
     <AnimatePresence>
       {isOpen && (
@@ -10,7 +11,7 @@ const Modal = ({ isOpen, onClose, children }) => {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           exit={{ opacity: 0 }}
-          className="absolute inset-0 flex-center p-4 bg-neutral-800/70 z-50"
+          className="absolute inset-0 flex-center p-4 bg-zinc-300/10 backdrop-blur-md z-50"
           onClick={onClose}
         >
           <motion.div
@@ -19,16 +20,15 @@ const Modal = ({ isOpen, onClose, children }) => {
             animate={{ opacity: 1, scale: 1 }}
             exit={{ opacity: 0, scale: 0.95 }}
             transition={{ type: 'spring', stiffness: 150, damping: 13, bounce: 0.70 }}
-            className="bg-white backdrop-blur-xl p-4 w-full h-64 max-w-md"
+            className={`relative bg-white border border-zinc-200 rounded-4xl p-7 w-full ${size}`}
             onClick={(e) => e.stopPropagation()}
           >
             {children || 'hello'}
             <button
               onClick={onClose}
-              aria-label="Close modal"
-              className=""
+              className="absolute -top-9 -right-9 size-11 flex-center bg-white/40 backdrop-blur-lg rounded-full active:scale-95 cursor-pointer"
             >
-              close
+              <HiOutlineX />
             </button>
           </motion.div>
         </motion.div>
