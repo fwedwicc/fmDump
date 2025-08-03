@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import { Link, useParams } from 'react-router-dom'
 import { motion } from 'framer-motion'
 import { ViewWrapper, Modal, Tooltip } from '../components'
-import { TbSmartHome, TbInfoSquareRounded, TbArrowUpRight } from "react-icons/tb"
+import { TbSmartHome, TbInfoSquareRounded } from "react-icons/tb"
 import { Data } from '../data'
 
 const ViewUI = () => {
@@ -22,7 +22,7 @@ const ViewUI = () => {
         {ComponentToRender ? <ComponentToRender /> : <p>UI not found</p>}
       </ViewWrapper>
       {/* Source Code & Info button */}
-      <div className='fixed top-6 left-6 flex items-center gap-5'>
+      <div className='fixed md:top-6 top-4 md:left-6 left-4 flex items-center gap-5'>
         <button className='button-base button-primary'>
           Source code
         </button>
@@ -42,15 +42,14 @@ const ViewUI = () => {
           </div>
           <div className='pt-4 space-y-3 border-t border-zinc-100'>
             <h4>Reference</h4>
-            <a href={matchedData.credits} target='_blank' rel='noopener noreferrer' className='flex items-center' >
-              <p>{matchedData.credits}</p>
-              <TbArrowUpRight className='stroke-[1.2px] size-5.5 text-zinc-600' />
+            <a href={matchedData.credits} target='_blank' rel='noopener noreferrer'>
+              <p className='break-all'>{matchedData.credits}</p>
             </a>
           </div>
         </div>
       </Modal>
       {/* Back to home button */}
-      <div className='fixed bottom-6 right-6'>
+      <div className='fixed md:bottom-6 bottom-4 md:right-6 right-4'>
         <Tooltip styles='-translate-y-1/2 top-1/2 text-nowrap right-17' content="Home" animation={8}>
           <Link to='/' className='flex-center size-13 rounded-[17px] transition-smooth button-secondary'>
             <TbSmartHome className='size-4.5 stroke-[2px]' />

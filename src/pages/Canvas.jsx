@@ -53,7 +53,7 @@ const Canvas = () => {
       </div>
       {/* ------------------------ // PLAYGROUND ------------------------ */}
       {/* IGNORE: Back Button */}
-      <div className='fixed bottom-6 right-6'>
+      <div className='fixed md:bottom-6 bottom-4 md:right-6 right-4'>
         <Tooltip styles='-translate-y-1/2 top-1/2 text-nowrap right-17' content="Home" animation={8}>
           <Link to='/' className='flex-center size-13 rounded-[17px] button-secondary'>
             <TbSmartHome className='size-4.5 stroke-[2px]' />

@@ -11,7 +11,7 @@
     font-family: "Poppins", sans-serif;
     font-weight: 400;
     font-style: normal;
-    @apply text-xs text-zinc-700;
+    @apply md:text-xs md:leading-snug text-[10.7px] leading-tight text-zinc-700;
   }
   span,
   button {
@@ -30,16 +30,16 @@
     @apply text-zinc-800;
   }
   h1 {
-    @apply text-4xl font-bold;
+    @apply md:text-4xl text-2xl font-bold;
   }
   h2 {
-    @apply text-3xl font-bold;
+    @apply md:text-3xl text-2xl font-bold;
   }
   h3 {
-    @apply text-2xl font-bold;
+    @apply md:text-2xl text-xl font-bold;
   }
   h4 {
-    @apply text-xl font-bold;
+    @apply md:text-xl text-lg font-bold;
   }
 }
 

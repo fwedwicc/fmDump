@@ -26,7 +26,7 @@ const Modal = ({ isOpen, onClose, size, children }) => {
             {children || 'hello'}
             <button
               onClick={onClose}
-              className="absolute -top-9 -right-9 size-11 flex-center bg-white/40 backdrop-blur-lg rounded-full active:scale-95 cursor-pointer"
+              className="absolute md:-top-9 -top-13 md:-right-9 right-0 size-11 flex-center bg-white/40 backdrop-blur-lg rounded-full active:scale-95 cursor-pointer"
             >
               <HiOutlineX />
             </button>

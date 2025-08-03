@@ -7,7 +7,7 @@ const CardItem = ({ to, thumbnail, title, label }) => {
   const [hovered, setHovered] = useState(false)
 
   return (
-    <Link to={to} className="relative border border-zinc-300/90 rounded-[1.5rem] h-88 overflow-hidden block">
+    <Link to={to} className="relative border border-zinc-300/90 md:rounded-[1.5rem] rounded-[1.2rem] md:h-88 h-50 overflow-hidden block">
       <motion.div
         onHoverStart={() => setHovered(true)}
         onHoverEnd={() => setHovered(false)}

@@ -15,9 +15,9 @@ const Home = () => {
       className='relative space-y-4'
     >
       <Header />
-      <main className='px-4 mt-30'>
+      <main className='md:px-4 px-2 md:mt-30 mt-25'>
         {/* Content */}
-        <div className='grid grid-cols-4 gap-2 p-2 bg-zinc-200/50 rounded-4xl'>
+        <div className='grid md:grid-cols-4 grid-cols-2 md:gap-2 gap-1 md:p-2 p-1 bg-zinc-200/50 md:rounded-4xl rounded-[24px]'>
           {Data.map((item, index) => (
             <CardItem
               key={index}
@@ -29,7 +29,7 @@ const Home = () => {
           ))}
         </div>
         {/* Link to canvas */}
-        <div className='fixed bottom-6 right-6'>
+        <div className='fixed md:bottom-6 bottom-4 md:right-6 right-4'>
           <Tooltip styles='-translate-y-1/2 top-1/2 w-[11.5rem] right-17' content="Take a peek at Frederick's ongoing experiments :)" animation={8}>
             <Link to='/canvas' className='flex-center size-13 rounded-[17px] transition-smooth button-primary'>
               <HiBeaker className='size-4 stroke-[0.1px]' />
