@@ -1,5 +1,6 @@
 import React from 'react'
 import { TbAlarm, TbFlame, TbCirclePlus, TbCopy } from "react-icons/tb"
+import {MemojiProfile} from '../../../assets/003'
 
 const UI003 = () => {
   return (
@@ -17,7 +18,7 @@ const UI003 = () => {
           </div>
           <div className='flex items-center gap-3.5 z-20'>
             <div className='size-13 rounded-full overflow-hidden'>
-              <img src="https://placehold.co/30x30" alt="iOS Profile" className='object-cover w-full h-full' />
+              <img src={MemojiProfile} alt="Memoji Profile" className='object-cover border border-neutral-100 w-full h-full' />
             </div>
             <div className='flex flex-col gap-y-1'>
               <span className='text-neutral-300 text-xl'>Frederick Moreno</span>
