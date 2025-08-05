@@ -33,7 +33,7 @@ const ViewUI = () => {
         </Tooltip>
       </div>
       {/* Info Modal */}
-      <Modal isOpen={openInfoModal} onClose={() => setOpenInfoModal(false)} size='max-w-md'>
+      <Modal isOpen={openInfoModal} onClose={() => setOpenInfoModal(false)} size='max-w-lg'>
         <div className='space-y-6'>
           <div className='space-y-2'>
             <p>{matchedData.title}</p>

@@ -1,5 +1,5 @@
 // Thumbnail Imports
-import { Thumbnail001, Thumbnail002 } from '../assets/thumbnails'
+import { Thumbnail001, Thumbnail002, Thumbnail003 } from '../assets/thumbnails'
 // Data Imports
 import { UI001, UI001Code, UI001CSS } from '../components/dumps/001'
 import { UI002, UI002Code } from '../components/dumps/002'
@@ -32,7 +32,7 @@ export const Data = [
   {
     id: 'ui003',
     to: '/view/ui003',
-    thumbnail: 'https://placehold.co/30x30',
+    thumbnail: Thumbnail003,
     title: '003',
     label: 'iOS Popup',
     desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit molestiae corrupti ipsam fugit velit asperiores.',
