@@ -20,16 +20,20 @@ const Modal = ({ isOpen, onClose, size, children }) => {
             animate={{ opacity: 1, scale: 1 }}
             exit={{ opacity: 0, scale: 0.95 }}
             transition={{ type: 'spring', stiffness: 150, damping: 13, bounce: 0.70 }}
-            className={`relative bg-white border border-zinc-200 rounded-4xl p-7 w-full ${size}`}
+            className={`relative bg-white border border-zinc-200 rounded-4xl p-2 w-full ${size}`}
             onClick={(e) => e.stopPropagation()}
           >
-            {children || 'hello'}
-            <button
-              onClick={onClose}
-              className="absolute md:-top-9 -top-13 md:-right-9 right-0 size-11 flex-center bg-white/40 backdrop-blur-lg rounded-full active:scale-95 cursor-pointer"
-            >
-              <HiOutlineX />
-            </button>
+            <div className='border sticky top-0'>
+              <button
+                onClick={onClose}
+                className="absolute top-0 right-0 size-11 flex-center bg-zinc-50 hover:bg-zinc-100/80 transition-smooth rounded-full active:scale-95 cursor-pointer z-50"
+              >
+                <HiOutlineX />
+              </button>
+            </div>
+            <div className='p-5'>
+              {children || 'hello'}
+            </div>
           </motion.div>
         </motion.div>
       )}

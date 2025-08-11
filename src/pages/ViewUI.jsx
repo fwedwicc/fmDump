@@ -10,6 +10,7 @@ const ViewUI = () => {
   const matchedData = Data.find((item) => item.id === id)
   const ComponentToRender = matchedData?.UI
   const [openInfoModal, setOpenInfoModal] = useState(false)
+  const [openCodeModal, setOpenCodeModal] = useState(false)
 
   return (
     <motion.section
@@ -23,7 +24,7 @@ const ViewUI = () => {
       </ViewWrapper>
       {/* Source Code & Info button */}
       <div className='fixed md:top-6 top-4 md:left-6 left-4 flex items-center gap-5'>
-        <button className='button-base button-primary'>
+        <button className='button-base button-primary' onClick={() => setOpenCodeModal(true)}>
           Source code
         </button>
         <Tooltip styles='-translate-y-1/2 top-1/2 text-nowrap left-8' content="Infos" animation={-8}>
@@ -47,6 +48,20 @@ const ViewUI = () => {
             </a>
           </div>
         </div>
+      </Modal>
+      {/* Source Code Modal */}
+      <Modal isOpen={openCodeModal} onClose={() => setOpenCodeModal(false)} size='max-w-6xl max-h-[90%] overflow-auto'>
+        {/* Header */}
+        <div>
+          <strong>JSX:</strong>
+          <pre className='break-words text-nowrap text-base'>{matchedData.sourceCodeJSX}</pre>
+        </div>
+        {matchedData.sourceCodeCSS && (
+          <div>
+            <strong>CSS:</strong>
+            <pre className='break-words text-nowrap text-base'>{matchedData.sourceCodeCSS}</pre>
+          </div>
+        )}
       </Modal>
       {/* Back to home button */}
       <div className='fixed md:bottom-6 bottom-4 md:right-6 right-4'>
