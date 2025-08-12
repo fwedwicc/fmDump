@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { Link, useParams } from 'react-router-dom'
 import { motion } from 'framer-motion'
-import { ViewWrapper, Modal, Tooltip } from '../components'
+import { ViewWrapper, Modal, SourceCodeModal, Tooltip } from '../components'
 import { TbSmartHome, TbInfoSquareRounded } from "react-icons/tb"
 import { Data } from '../data'
 
@@ -50,18 +50,12 @@ const ViewUI = () => {
         </div>
       </Modal>
       {/* Source Code Modal */}
-      <Modal isOpen={openCodeModal} onClose={() => setOpenCodeModal(false)} header='sticky' size='max-w-6xl max-h-[90%]'>
-        <div>
-          <strong>JSX:</strong>
-          <pre className='break-words text-nowrap text-base'>{matchedData.sourceCodeJSX}</pre>
-        </div>
-        {matchedData.sourceCodeCSS && (
-          <div>
-            <strong>CSS:</strong>
-            <pre className='break-words text-nowrap text-base'>{matchedData.sourceCodeCSS}</pre>
-          </div>
-        )}
-      </Modal>
+      <SourceCodeModal
+        isOpen={openCodeModal}
+        onClose={() => setOpenCodeModal(false)}
+        JSXCode={matchedData.sourceCodeJSX}
+        CSSCode={matchedData.sourceCodeCSS}
+      />
       {/* Back to home button */}
       <div className='fixed md:bottom-6 bottom-4 md:right-6 right-4'>
         <Tooltip styles='-translate-y-1/2 top-1/2 text-nowrap right-17' content="Home" animation={8}>

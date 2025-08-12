@@ -4,6 +4,7 @@ import CardItem from './CardItem'
 import Tooltip from './Tooltip'
 import ViewWrapper from './ViewWrapper'
 import Modal from './Modal'
+import SourceCodeModal from './SourceCodeModal'
 
 export {
   Header,
@@ -11,5 +12,6 @@ export {
   CardItem,
   Tooltip,
   ViewWrapper,
-  Modal
+  Modal,
+  SourceCodeModal
 }
