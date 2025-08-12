@@ -2,7 +2,7 @@ import React from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import { HiOutlineX } from "react-icons/hi"
 
-const Modal = ({ isOpen, onClose, size, header, children }) => {
+const InfoModal = ({ isOpen, onClose, title, label, desc, credits }) => {
   return (
     <AnimatePresence>
       {isOpen && (
@@ -20,25 +20,29 @@ const Modal = ({ isOpen, onClose, size, header, children }) => {
             animate={{ opacity: 1, scale: 1 }}
             exit={{ opacity: 0, scale: 0.95 }}
             transition={{ type: 'spring', stiffness: 150, damping: 13, bounce: 0.70 }}
-            className={`relative bg-white border border-zinc-200 rounded-4xl w-full ${size} flex flex-col`}
+            className='relative bg-white border border-zinc-200 rounded-4xl w-full max-w-lg flex flex-col'
             onClick={(e) => e.stopPropagation()}
           >
             <div className="overflow-auto min-h-0 horizontal-scrollbar vertical-scrollbar w-full rounded-4xl">
-              {/* Header */}
-              <div
-                className={`flex justify-between py-1.5 pl-1.5 pr-0.5 ${header === 'sticky'
-                  ? 'sticky top-0 left-0 bg-white/80 backdrop-blur-xl z-10 min-w-full'
-                  : 'absolute top-0 right-0'
-                  }`}
-              >
-                <div></div>
-                <button onClick={onClose} className="size-11 flex-center bg-zinc-50 hover:bg-zinc-100/80 transition-smooth rounded-full active:scale-95 cursor-pointer z-50">
-                  <HiOutlineX />
-                </button>
-              </div>
+              {/* Close Button */}
+              <button onClick={onClose} className="absolute top-1.5 right-1.5 size-11 flex-center bg-zinc-50 hover:bg-zinc-100/80 transition-smooth rounded-full active:scale-95 cursor-pointer z-50">
+                <HiOutlineX />
+              </button>
               {/* Body */}
               <div className="p-7">
-                {children || 'hello'}
+                <div className='space-y-6'>
+                  <div className='space-y-2'>
+                    <p>{title}</p>
+                    <h2>{label}</h2>
+                    <p>{desc}</p>
+                  </div>
+                  <div className='pt-4 space-y-3 border-t border-zinc-100'>
+                    <h4>Reference</h4>
+                    <a href={credits} target='_blank' rel='noopener noreferrer'>
+                      <p className='break-all'>{credits}</p>
+                    </a>
+                  </div>
+                </div>
               </div>
             </div>
           </motion.div>
@@ -48,4 +52,4 @@ const Modal = ({ isOpen, onClose, size, header, children }) => {
   )
 }
 
-export default Modal
+export default InfoModal

@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { Link, useParams } from 'react-router-dom'
 import { motion } from 'framer-motion'
-import { ViewWrapper, Modal, SourceCodeModal, Tooltip } from '../components'
+import { ViewWrapper, InfoModal, SourceCodeModal, Tooltip } from '../components'
 import { TbSmartHome, TbInfoSquareRounded } from "react-icons/tb"
 import { Data } from '../data'
 
@@ -34,21 +34,14 @@ const ViewUI = () => {
         </Tooltip>
       </div>
       {/* Info Modal */}
-      <Modal isOpen={openInfoModal} onClose={() => setOpenInfoModal(false)} size='max-w-lg'>
-        <div className='space-y-6'>
-          <div className='space-y-2'>
-            <p>{matchedData.title}</p>
-            <h2>{matchedData.label}</h2>
-            <p>{matchedData.desc}</p>
-          </div>
-          <div className='pt-4 space-y-3 border-t border-zinc-100'>
-            <h4>Reference</h4>
-            <a href={matchedData.credits} target='_blank' rel='noopener noreferrer'>
-              <p className='break-all'>{matchedData.credits}</p>
-            </a>
-          </div>
-        </div>
-      </Modal>
+      <InfoModal
+        isOpen={openInfoModal}
+        onClose={() => setOpenInfoModal(false)}
+        title={matchedData.title}
+        label={matchedData.label}
+        desc={matchedData.desc}
+        credits={matchedData.credits}
+      />
       {/* Source Code Modal */}
       <SourceCodeModal
         isOpen={openCodeModal}

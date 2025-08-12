@@ -3,7 +3,7 @@ import Footer from './Footer'
 import CardItem from './CardItem'
 import Tooltip from './Tooltip'
 import ViewWrapper from './ViewWrapper'
-import Modal from './Modal'
+import InfoModal from './InfoModal'
 import SourceCodeModal from './SourceCodeModal'
 
 export {
@@ -12,6 +12,6 @@ export {
   CardItem,
   Tooltip,
   ViewWrapper,
-  Modal,
+  InfoModal,
   SourceCodeModal
 }
