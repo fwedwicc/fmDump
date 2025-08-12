@@ -41,6 +41,35 @@
   h4 {
     @apply md:text-xl text-lg font-bold;
   }
+  body::-webkit-scrollbar {
+    @apply w-1;
+  }
+  body::-webkit-scrollbar-track {
+    @apply bg-transparent;
+  }
+  body::-webkit-scrollbar-thumb {
+    @apply bg-zinc-200/40 rounded-[3px];
+  }
+  /* Vertical Scrollbar */
+  .vertical-scrollbar::-webkit-scrollbar {
+    @apply w-1;
+  }
+  .vertical-scrollbar::-webkit-scrollbar-track {
+    @apply bg-transparent mx-10;
+  }
+  .vertical-scrollbar::-webkit-scrollbar-thumb {
+    @apply bg-zinc-200/40 rounded-[3px];
+  }
+  /* Horizontal Scrollbar */
+  .horizontal-scrollbar::-webkit-scrollbar {
+    @apply h-1;
+  }
+  .horizontal-scrollbar::-webkit-scrollbar-track {
+    @apply bg-transparent my-12;
+  }
+  .horizontal-scrollbar::-webkit-scrollbar-thumb {
+    @apply bg-zinc-200/40 rounded-[3px];
+  }
 }
 
 @layer components {

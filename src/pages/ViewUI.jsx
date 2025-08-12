@@ -50,8 +50,7 @@ const ViewUI = () => {
         </div>
       </Modal>
       {/* Source Code Modal */}
-      <Modal isOpen={openCodeModal} onClose={() => setOpenCodeModal(false)} size='max-w-6xl max-h-[90%] overflow-auto'>
-        {/* Header */}
+      <Modal isOpen={openCodeModal} onClose={() => setOpenCodeModal(false)} header='sticky' size='max-w-6xl max-h-[90%]'>
         <div>
           <strong>JSX:</strong>
           <pre className='break-words text-nowrap text-base'>{matchedData.sourceCodeJSX}</pre>
