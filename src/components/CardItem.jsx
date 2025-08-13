@@ -16,6 +16,7 @@ const CardItem = ({ to, thumbnail, title, label }) => {
         <img src={thumbnail} alt={label} className="object-cover w-full h-full" draggable="false" />
         <div className="absolute w-full top-0 left-0 p-1 pointer-events-none">
           <motion.div
+            initial={false}
             animate={
               hovered
                 ? { opacity: 1, y: 0, scale: 1 }
