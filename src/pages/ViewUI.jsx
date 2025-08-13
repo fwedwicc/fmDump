@@ -62,32 +62,3 @@ const ViewUI = () => {
 }
 
 export default ViewUI
-
-{/* This is just initial fetch hehe (no design) */ }
-{/* <div className='border p-4 space-y-2'>
-        <>
-          <div>
-            <strong>JSX:</strong>
-            <pre className='whitespace-pre-wrap break-words'>{matchedData.sourceCodeJSX}</pre>
-          </div>
-
-          {matchedData.sourceCodeCSS && (
-            <div>
-              <strong>CSS:</strong>
-              <pre className='whitespace-pre-wrap break-words'>{matchedData.sourceCodeCSS}</pre>
-            </div>
-          )}
-
-          <div>
-            <strong>Credits:</strong>{' '}
-            <a
-              href={matchedData.credits}
-              target='_blank'
-              rel='noopener noreferrer'
-              className='underline text-blue-600'
-            >
-              {matchedData.credits}
-            </a>
-          </div>
-        </>
-      </div> */}
