@@ -17,7 +17,7 @@ const Home = () => {
       <Header />
       <main className='md:px-4 px-2 md:mt-30 mt-25'>
         {/* Content */}
-        <div className='grid md:grid-cols-4 grid-cols-2 md:gap-2 gap-1 md:p-2 p-1 bg-zinc-200/50 md:rounded-4xl rounded-[24px]'>
+        <div className='grid lg:grid-cols-4 md:grid-cols-3 grid-cols-2 md:gap-2 gap-1 md:p-2 p-1 bg-zinc-200/50 md:rounded-4xl rounded-[24px]'>
           {Data.map((item, index) => (
             <CardItem
               key={index}

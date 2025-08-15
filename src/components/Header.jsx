@@ -24,7 +24,7 @@ const Header = () => {
   const Socials = () => {
     return (
       <>
-        <a href='https://buymeacoffee.com/fwedwicc' target='_blank' rel='noopener noreferrer' className='button-base flex-center button-primary'>Buy me a coffee</a>
+        <a href='https://buymeacoffee.com/fwedwicc' target='_blank' rel='noopener noreferrer' className='button-base flex-center button-primary' onClick={() => setOpenMenu(false)}>Buy me a coffee</a>
         <div className='flex gap-1'>
           {[
             { icon: TbBrandGithub, link: 'https://github.com/fwedwicc' },
@@ -32,7 +32,7 @@ const Header = () => {
             { icon: TbBrandBehance, link: 'https://www.behance.net/fwedwicc' },
             { icon: TbBrandLinkedin, link: 'https://www.linkedin.com/in/frederick-moreno/' },
           ].map((item, index) => (
-            <a href={item.link} target='_blank' rel='noopener noreferrer' className='hover:bg-zinc-200/30 transition-smooth p-2.5 grid place-content-center rounded-xl' key={index}>
+            <a href={item.link} target='_blank' rel='noopener noreferrer' className='hover:bg-zinc-200/30 transition-smooth p-2.5 grid place-content-center rounded-xl' onClick={() => setOpenMenu(false)} key={index}>
               <item.icon className='size-4 text-zinc-600' />
             </a>
           ))}
@@ -74,7 +74,7 @@ const Header = () => {
             )}
           </AnimatePresence>
           {/* Link Toggle Button */}
-          <button className='md:hidden flex' onClick={() => setOpenMenu(!openMenu)}>
+          <button className='md:hidden flex cursor-pointer' onClick={() => setOpenMenu(!openMenu)}>
             <TbLink className='size-6 stroke-[2px] text-neutral-800' />
           </button>
         </div>
