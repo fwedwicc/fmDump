@@ -13,7 +13,17 @@ const Canvas = () => {
       className='relative h-screen overflow-hidden bg-neutral-100 grid place-content-center'
     >
       {/* ------------------------ PLAYGROUND ------------------------ */}
-      <h3>Hello?</h3>
+      <div className='border flex flex-col items-center justify-center gap-y-3 border w-full min-w-lg'>
+        <div className='w-[16rem] border rounded-full p-1.5'>
+          s
+        </div>
+        <div className='w-sm border rounded-full p-1.5'>
+          s
+        </div>
+        <div className='w-full border rounded-full p-3'>
+          s
+        </div>
+      </div>
       {/* ------------------------ // PLAYGROUND ------------------------ */}
       {/* IGNORE: Back Button */}
       <div className='fixed md:bottom-6 bottom-4 md:right-6 right-4'>
