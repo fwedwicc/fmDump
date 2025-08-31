@@ -104,3 +104,16 @@
     @apply flex items-start justify-start;
   }
 }
+
+/* 005 */
+.custom-shadow {
+  box-shadow: -26px 26px 90px 20px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: -26px 26px 90px 20px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: -26px 26px 90px 20px rgba(0, 0, 0, 0.3);
+}
+.heading-font {
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-weight: auto;
+  font-style: normal;
+}
