@@ -1,55 +1,16 @@
 // Thumbnail Imports
-import { Thumbnail001, Thumbnail002, Thumbnail003, Thumbnail004 } from '../assets/thumbnails'
+import { Thumbnail001, Thumbnail002, Thumbnail003, Thumbnail004, Thumbnail005 } from '../assets/thumbnails'
 // Data Imports
 import { UI001, UI001Code, UI001CSS } from '../components/dumps/001'
 import { UI002, UI002Code } from '../components/dumps/002'
 import { UI003, UI003Code } from '../components/dumps/003'
 import { UI004, UI004Code } from '../components/dumps/004'
+import { UI005, UI005Code, UI005CSS } from '../components/dumps/005'
 
 export const Data = [
-  {
-    id: 'ui001',
-    to: '/view/ui001',
-    thumbnail: Thumbnail001,
-    title: '001',
-    label: 'Apple card',
-    desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit molestiae corrupti ipsam fugit velit asperiores.',
-    UI: UI001,
-    sourceCodeJSX: UI001Code,
-    sourceCodeCSS: UI001CSS,
-    credits: 'https://ph.pinterest.com/pin/7529524371949146',
-  },
-  {
-    id: 'ui002',
-    to: '/view/ui002',
-    thumbnail: Thumbnail002,
-    title: '002',
-    label: 'Skeumorphism',
-    desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit molestiae corrupti ipsam fugit velit asperiores.',
-    UI: UI002,
-    sourceCodeJSX: UI002Code,
-    credits: 'https://www.instagram.com/p/DHtlhhoNlwq/?img_index=1&epik=dj0yJnU9aUpoRDJVSURtX3VrR0czejhwa1NfaF9uWHl4OFFORXEmcD0wJm49OEFPVklkRXc0WjZzSHNrN21UUkhQdyZ0PUFBQUFBR2lITkpR',
-  },
-  {
-    id: 'ui003',
-    to: '/view/ui003',
-    thumbnail: Thumbnail003,
-    title: '003',
-    label: 'iOS Popup',
-    desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit molestiae corrupti ipsam fugit velit asperiores.',
-    UI: UI003,
-    sourceCodeJSX: UI003Code,
-    credits: 'https://ph.pinterest.com/pin/3799980930358509',
-  },
-  {
-    id: 'ui004',
-    to: '/view/ui004',
-    thumbnail: Thumbnail004,
-    title: '004',
-    label: 'Flight Booking Widget',
-    desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit molestiae corrupti ipsam fugit velit asperiores.',
-    UI: UI004,
-    sourceCodeJSX: UI004Code,
-    credits: 'https://dribbble.com/shots/25049627-UI-Cards-Animations-For-Booking-Platform',
-  },
+  { id: 'ui001', to: '/view/ui001', thumbnail: Thumbnail001, title: '001', label: 'Apple card', desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit molestiae corrupti ipsam fugit velit asperiores.', UI: UI001, sourceCodeJSX: UI001Code, sourceCodeCSS: UI001CSS, credits: 'https://ph.pinterest.com/pin/7529524371949146', },
+  { id: 'ui002', to: '/view/ui002', thumbnail: Thumbnail002, title: '002', label: 'Skeumorphism', desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit molestiae corrupti ipsam fugit velit asperiores.', UI: UI002, sourceCodeJSX: UI002Code, credits: 'https://www.instagram.com/p/DHtlhhoNlwq/?img_index=1&epik=dj0yJnU9aUpoRDJVSURtX3VrR0czejhwa1NfaF9uWHl4OFFORXEmcD0wJm49OEFPVklkRXc0WjZzSHNrN21UUkhQdyZ0PUFBQUFBR2lITkpR', },
+  { id: 'ui003', to: '/view/ui003', thumbnail: Thumbnail003, title: '003', label: 'iOS Popup', desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit molestiae corrupti ipsam fugit velit asperiores.', UI: UI003, sourceCodeJSX: UI003Code, credits: 'https://ph.pinterest.com/pin/3799980930358509', },
+  { id: 'ui004', to: '/view/ui004', thumbnail: Thumbnail004, title: '004', label: 'Flight Booking Widget', desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit molestiae corrupti ipsam fugit velit asperiores.', UI: UI004, sourceCodeJSX: UI004Code, credits: 'https://dribbble.com/shots/25049627-UI-Cards-Animations-For-Booking-Platform', },
+  { id: 'ui005', to: '/view/ui005', thumbnail: Thumbnail005, title: '005', label: 'Minimal Card UI', desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit molestiae corrupti ipsam fugit velit asperiores.', UI: UI005, sourceCodeJSX: UI005Code, sourceCodeCSS: UI005CSS, credits: 'https://www.instagram.com/p/DG3fADRpWi6/', },
 ]
