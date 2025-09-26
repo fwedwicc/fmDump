@@ -13,8 +13,36 @@ const Canvas = () => {
       className='relative h-screen overflow-hidden bg-neutral-100 grid place-content-center'
     >
       {/* ------------------------ PLAYGROUND ------------------------ */}
-      <h1 className='text-center'>There's nothing here.</h1>
-      <p className='text-center mt-1'>Frederick is busy.</p>
+      <div className='grid grid-cols-3 gap-4 min-w-[10rem]'>
+        {/* Balls */}
+        <div className='w-full border border-neutral-200 col-span-full grid grid-cols-4 place-content-center gap-2 p-2'>
+          <div className='size-14 rounded-full bg-neutral-200'></div>
+          <div className='size-14 rounded-full bg-neutral-200'></div>
+          <div className='size-14 rounded-full bg-neutral-200'></div>
+          <div className='size-14 rounded-full bg-neutral-200'></div>
+        </div>
+        <div className='col-span-full flex item-center gap-2'>
+          {/* Locked/Unlock */}
+          <div className='col-span-3 border border-neutral-200 h-14 w-full'>
+
+          </div>
+          {/* Message Button */}
+          <button className='flex-nowrap size-14 p-[1px] bg-gradient-to-b from-zinc-300 to-zinc-300 rounded-full shadow-xl shadow-zinc-300/40'>
+            <div className='size-full p-1 rounded-full bg-gradient-to-b from-zinc-100 via-zinc-400 to-teal-500/20'>
+              <div className='size-full flex items-center justify-center bg-gradient-to-b from-zinc-200 via-zinc-200 to-zinc-300 rounded-full'>
+              </div>
+            </div>
+          </button>
+        </div>
+        {/* Generate Button */}
+        <button className='col-span-full p-[1px] bg-gradient-to-b from-zinc-300 to-zinc-300 rounded-full shadow-xl shadow-zinc-300/40'>
+          <div className='p-1 rounded-full bg-gradient-to-b from-zinc-100 via-zinc-400 to-teal-500/20'>
+            <div className='w-full py-4 flex items-center justify-center bg-gradient-to-b from-zinc-200 via-zinc-200 to-zinc-300 rounded-full'>
+              <p>.</p>
+            </div>
+          </div>
+        </button>
+      </div>
       {/* ------------------------ // PLAYGROUND ------------------------ */}
       {/* IGNORE: Back Button */}
       <div className='fixed md:bottom-6 bottom-4 md:right-6 right-4'>
