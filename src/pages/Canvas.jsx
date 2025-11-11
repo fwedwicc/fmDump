@@ -4,6 +4,7 @@ import { motion } from 'framer-motion'
 import { Tooltip } from '../components'
 import { TbSmartHome } from "react-icons/tb"
 
+// glass UIs
 const Canvas = () => {
   return (
     <motion.section
