@@ -4,7 +4,7 @@ import { motion } from 'framer-motion'
 import { Tooltip } from '../components'
 import { TbSmartHome } from "react-icons/tb"
 
-// glass UIs
+// Recording Device
 const Canvas = () => {
   return (
     <motion.section
@@ -14,35 +14,19 @@ const Canvas = () => {
       className='relative h-screen overflow-hidden bg-neutral-100 grid place-content-center'
     >
       {/* ------------------------ PLAYGROUND ------------------------ */}
-      <div className='grid grid-cols-3 gap-4 min-w-[10rem]'>
-        {/* Balls */}
-        <div className='w-full border border-neutral-200 col-span-full grid grid-cols-4 place-content-center gap-2 p-2'>
-          <div className='size-14 rounded-full bg-neutral-200'></div>
-          <div className='size-14 rounded-full bg-neutral-200'></div>
-          <div className='size-14 rounded-full bg-neutral-200'></div>
-          <div className='size-14 rounded-full bg-neutral-200'></div>
-        </div>
-        <div className='col-span-full flex item-center gap-2'>
-          {/* Locked/Unlock */}
-          <div className='col-span-3 border border-neutral-200 h-14 w-full'>
+      <div className='flex h-60 min-w-[23rem] p-[0.2px] pb-3 rounded-[21px] border'>
+        <div className='flex justify-center items-end size-full rounded-[20.8px] p-3 border'>
 
-          </div>
-          {/* Message Button */}
-          <button className='flex-nowrap size-14 p-[1px] bg-gradient-to-b from-zinc-300 to-zinc-300 rounded-full shadow-xl shadow-zinc-300/40'>
-            <div className='size-full p-1 rounded-full bg-gradient-to-b from-zinc-100 via-zinc-400 to-teal-500/20'>
-              <div className='size-full flex items-center justify-center bg-gradient-to-b from-zinc-200 via-zinc-200 to-zinc-300 rounded-full'>
-              </div>
+          {/*  */}
+          <div className='w-full grid grid-cols-3 gap-[1.5px] p-[1.5px] rounded-2xl bg-neutral-900 overflow-hidden h-27'>
+            <div className='bg-neutral-100 rounded-l-[15px] rounded-r-sm'></div>
+            <div className='bg-neutral-100 rounded-sm'></div>
+            <div className='flex flex-col gap-[1.5px]'>
+              <div className='flex-1 bg-neutral-100 rounded-sm rounded-tr-[15px]'></div>
+              <div className='flex-1 bg-neutral-100 rounded-sm rounded-br-[15px]'></div>
             </div>
-          </button>
+          </div>
         </div>
-        {/* Generate Button */}
-        <button className='col-span-full p-[1px] bg-gradient-to-b from-zinc-300 to-zinc-300 rounded-full shadow-xl shadow-zinc-300/40'>
-          <div className='p-1 rounded-full bg-gradient-to-b from-zinc-100 via-zinc-400 to-teal-500/20'>
-            <div className='w-full py-4 flex items-center justify-center bg-gradient-to-b from-zinc-200 via-zinc-200 to-zinc-300 rounded-full'>
-              <p>.</p>
-            </div>
-          </div>
-        </button>
       </div>
       {/* ------------------------ // PLAYGROUND ------------------------ */}
       {/* IGNORE: Back Button */}
