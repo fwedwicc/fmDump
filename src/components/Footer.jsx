@@ -2,6 +2,8 @@ import React from 'react'
 import FMLogo from '/fm-logo.png'
 
 const Footer = () => {
+  const currentYear = new Date().getFullYear()
+
   return (
     <footer className='flex-center p-4'>
       <div className='flex-center gap-3'>
@@ -13,7 +15,7 @@ const Footer = () => {
         {/* Credits */}
         <div>
           <h4>fmDump_</h4>
-          <a href='https://fm-linktree.vercel.app' target='_blank' rel='noopener noreferrer'><p>FM © 2025</p></a>
+          <a href='https://fwedwicc.com' target='_blank' rel='noopener noreferrer'><p>fwedwicc @ {currentYear}</p></a>
         </div>
       </div>
     </footer>
