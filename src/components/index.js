@@ -13,5 +13,5 @@ export {
   Tooltip,
   ViewWrapper,
   InfoModal,
-  SourceCodeModal
+  SourceCodeModal,
 }

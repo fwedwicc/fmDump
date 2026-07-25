@@ -3,21 +3,26 @@
 @layer base {
   * {
     @apply selection:bg-zinc-900 selection:text-zinc-200;
+    cursor: none !important;
   }
+
   body {
     @apply bg-zinc-100;
   }
+
   p {
     font-family: "Poppins", sans-serif;
     font-weight: 400;
     font-style: normal;
     @apply md:text-xs md:leading-snug text-[10.7px] leading-tight text-zinc-700;
   }
+
   span,
   button {
     font-family: "Poppins", sans-serif;
     font-style: normal;
   }
+
   h1,
   h2,
   h3,
@@ -29,44 +34,57 @@
     font-style: normal;
     @apply text-zinc-800;
   }
+
   h1 {
     @apply md:text-4xl text-2xl font-bold;
   }
+
   h2 {
     @apply md:text-3xl text-2xl font-bold;
   }
+
   h3 {
     @apply md:text-2xl text-xl font-bold;
   }
+
   h4 {
     @apply md:text-xl text-lg font-bold;
   }
+
   body::-webkit-scrollbar {
     @apply w-1;
   }
+
   body::-webkit-scrollbar-track {
     @apply bg-transparent;
   }
+
   body::-webkit-scrollbar-thumb {
     @apply bg-zinc-200/40 rounded-[3px];
   }
+
   /* Vertical Scrollbar */
   .vertical-scrollbar::-webkit-scrollbar {
     @apply w-1;
   }
+
   .vertical-scrollbar::-webkit-scrollbar-track {
     @apply bg-transparent mx-10;
   }
+
   .vertical-scrollbar::-webkit-scrollbar-thumb {
     @apply bg-zinc-200/40 rounded-[3px];
   }
+
   /* Horizontal Scrollbar */
   .horizontal-scrollbar::-webkit-scrollbar {
     @apply h-1;
   }
+
   .horizontal-scrollbar::-webkit-scrollbar-track {
     @apply bg-transparent my-12;
   }
+
   .horizontal-scrollbar::-webkit-scrollbar-thumb {
     @apply bg-zinc-200/40 rounded-[3px];
   }
@@ -76,15 +94,19 @@
   .button-base {
     @apply flex items-center gap-2 py-3.5 px-4.5 rounded-[14px] text-xs leading-none cursor-pointer transition-all duration-300 ease-in-out;
   }
+
   .button-primary {
     @apply bg-zinc-800 hover:bg-zinc-900 text-zinc-200 shadow-lg shadow-zinc-500/30 active:scale-95;
   }
+
   .button-secondary {
     @apply border border-zinc-200 bg-zinc-100 hover:bg-zinc-200/20 text-zinc-800 shadow-lg shadow-zinc-400/20 active:scale-95;
   }
+
   .button-outline {
     @apply border border-zinc-200 bg-transparent hover:bg-zinc-200/20 text-zinc-800 active:scale-95;
   }
+
   .tab-secondary {
     @apply bg-zinc-100/50 hover:bg-zinc-200/40 text-zinc-800 active:scale-95;
   }
@@ -94,12 +116,15 @@
   .transition-smooth {
     @apply transition-all duration-300 ease-in-out;
   }
+
   .flex-between {
     @apply flex items-center justify-between;
   }
+
   .flex-center {
     @apply flex items-center justify-center;
   }
+
   .flex-start {
     @apply flex items-start justify-start;
   }
@@ -110,6 +135,7 @@
   -webkit-box-shadow: -26px 26px 90px 20px rgba(0, 0, 0, 0.3);
   -moz-box-shadow: -26px 26px 90px 20px rgba(0, 0, 0, 0.3);
 }
+
 .heading-font {
   font-family: "Playfair Display", serif;
   font-optical-sizing: auto;
