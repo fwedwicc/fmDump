@@ -28,7 +28,7 @@ export const Data = [
     to: '/view/ui002',
     thumbnail: Thumbnail002,
     title: '002',
-    label: 'Skeumorphism',
+    label: 'Zen Card',
     desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit molestiae corrupti ipsam fugit velit asperiores.',
     UI: UI002,
     Skeleton: Skeleton002,

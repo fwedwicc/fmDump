@@ -1,4 +1,5 @@
 import React from 'react'
+import { Analytics } from '@vercel/analytics/react'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import { Home, ViewUI, Canvas } from './pages'
 import { SmoothCursor } from './components/SmoothCursor'
@@ -19,8 +20,9 @@ const AppWrapper = () => {
 
   return (
     <Router>
-      <App />
       <SmoothCursor />
+      <Analytics />
+      <App />
     </Router>
   )
 }
