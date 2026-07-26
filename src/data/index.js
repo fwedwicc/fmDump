@@ -3,7 +3,7 @@ import { Thumbnail001, Thumbnail002, Thumbnail003, Thumbnail004, Thumbnail005 } 
 // Data Imports
 import { UI001, Skeleton001, UI001Code, Skeleton001Code, UI001CSS, Skeleton001CSS } from '../components/dumps/001'
 import { UI002, Skeleton002, UI002Code, Skeleton002Code } from '../components/dumps/002'
-import { UI003, UI003Code } from '../components/dumps/003'
+import { UI003, Skeleton003, UI003Code, Skeleton003Code } from '../components/dumps/003'
 import { UI004, UI004Code } from '../components/dumps/004'
 import { UI005, UI005Code, UI005CSS } from '../components/dumps/005'
 
@@ -44,6 +44,9 @@ export const Data = [
     label: 'iOS Popup',
     desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit molestiae corrupti ipsam fugit velit asperiores.',
     UI: UI003,
+    Skeleton: Skeleton003,
+    sourceCodeJSX: UI003Code,
+    skeletonSourceCodeJSX: Skeleton003Code,
     sourceCodeJSX: UI003Code,
     credits: 'https://ph.pinterest.com/pin/3799980930358509',
   },
