@@ -103,6 +103,7 @@ const ViewUI = () => {
         label={matchedData?.label}
         desc={matchedData?.desc}
         credits={matchedData?.credits}
+        reference={matchedData?.reference}
       />
       {/* Source Code Modal */}
       <SourceCodeModal

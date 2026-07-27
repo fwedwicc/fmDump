@@ -2,7 +2,7 @@ import React from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import { HiOutlineX } from "react-icons/hi"
 
-const InfoModal = ({ isOpen, onClose, title, label, desc, credits }) => {
+const InfoModal = ({ isOpen, onClose, title, label, desc, credits, reference }) => {
   return (
     <AnimatePresence>
       {isOpen && (
@@ -37,9 +37,13 @@ const InfoModal = ({ isOpen, onClose, title, label, desc, credits }) => {
                     <p>{desc}</p>
                   </div>
                   <div className='pt-4 space-y-3 border-t border-zinc-100'>
-                    <h4>Reference</h4>
-                    <a href={credits} target='_blank' rel='noopener noreferrer'>
-                      <p className='break-all'>{credits}</p>
+                    <h4>Credits</h4>
+                    <p>
+                      • Original UI Design: <span className='font-semibold italic'>{credits}</span> <br />
+                      • Frontend Implementation: <span className='font-semibold italic'>Frederick Moreno (fwedwicc)</span>
+                    </p>
+                    <a href={reference} target='_blank' rel='noopener noreferrer'>
+                      <p className='break-all'>Reference: <span className='underline italic'>{reference}</span></p>
                     </a>
                   </div>
                 </div>
