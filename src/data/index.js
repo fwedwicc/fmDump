@@ -4,7 +4,7 @@ import { Thumbnail001, Thumbnail002, Thumbnail003, Thumbnail004, Thumbnail005 } 
 import { UI001, Skeleton001, UI001Code, Skeleton001Code, UI001CSS, Skeleton001CSS } from '../components/dumps/001'
 import { UI002, Skeleton002, UI002Code, Skeleton002Code } from '../components/dumps/002'
 import { UI003, Skeleton003, UI003Code, Skeleton003Code } from '../components/dumps/003'
-import { UI004, UI004Code } from '../components/dumps/004'
+import { UI004, Skeleton004, UI004Code, Skeleton004Code } from '../components/dumps/004'
 import { UI005, UI005Code, UI005CSS } from '../components/dumps/005'
 
 export const Data = [
@@ -61,8 +61,12 @@ export const Data = [
     label: 'Flight Booking Widget',
     desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit molestiae corrupti ipsam fugit velit asperiores.',
     UI: UI004,
+    Skeleton: Skeleton004,
     sourceCodeJSX: UI004Code,
-    credits: 'https://dribbble.com/shots/25049627-UI-Cards-Animations-For-Booking-Platform',
+    skeletonSourceCodeJSX: Skeleton004Code,
+    sourceCodeJSX: UI004Code,
+    credits: '@',
+    reference: 'https://dribbble.com/shots/25049627-UI-Cards-Animations-For-Booking-Platform',
   },
   {
     id: 'ui005',
