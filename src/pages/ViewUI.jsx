@@ -92,8 +92,10 @@ const ViewUI = () => {
           </button>
         </Tooltip>
       </div>
-      <div className='fixed md:top-6 top-4 md:right-6 right-4 p-1'>
-        <p className='text-zinc-500 text-[11px] tracking-widest'>{isLofi ? "LOW-FIDELITY" : "HIGH-FIDELITY"}</p>
+      <div className="fixed bottom-6 left-6 md:top-4 md:right-4 md:bottom-auto md:left-auto p-1">
+        <p className="text-zinc-500 text-[11px] tracking-widest">
+          {isLofi ? "LOW-FIDELITY" : "HIGH-FIDELITY"}
+        </p>
       </div>
       {/* Info Modal */}
       <InfoModal
