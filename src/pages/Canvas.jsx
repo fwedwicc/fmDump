@@ -55,11 +55,11 @@ const Canvas = () => {
             </div>
           </div>
           {/*  */}
-          <div className='flex gap-2 border w-full'>
-            <div className='w-12 border rounded-lg'></div>
-            <div className='grid grid-cols-44 gap-x-[3px] gap-y-[2px] border'>
-              {Array.from({ length: 176 }, (_, i) => (
-                <div key={i} className='size-1 rounded-full border' />
+          <div className='flex gap-2 w-full'>
+            <div className='w-14 border block bg-neutral-900 rounded-lg'></div>
+            <div className='grid grid-cols-58 gap-x-[2.5px] gap-y-[2px] me-1'>
+              {Array.from({ length: 290 }, (_, i) => (
+                <div key={i} className='size-[2.8px] rounded-full bg-gradient-to-b from-neutral-900 to-neutral-500' />
               ))}
             </div>
           </div>
@@ -70,9 +70,10 @@ const Canvas = () => {
                 <div className='size-4 bg-red-600/50 rounded-full border' />
               </div>
             </div>
-            <div className='flex items-center justify-center bg-[#e7e7e7] border-t-[1px] border-white rounded-sm'>
-              <div className='size-13 flex items-center justify-center rounded-full border'>
-                <div className='size-3.5 bg-neutral-500 rounded-[2px] border' />
+            <div className='flex items-center justify-center bg-gradient-to-b from-neutral-200 to-neutral-300 border-t-[1px] border-white rounded-sm'>
+              <div className='relative size-13 flex items-center justify-center rounded-full bg-neutral-400/30 overflow-hidden'>
+                <div className='size-3.5 bg-neutral-500 rounded-[2px] border z-10' />
+                <div className='absolute -bottom-4 bg-neutral-100/90 size-14 rounded-full border blur-sm' />
               </div>
             </div>
             <div className='flex flex-col gap-[1.5px]'>
