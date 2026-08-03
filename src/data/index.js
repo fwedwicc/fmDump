@@ -5,7 +5,7 @@ import { UI001, Skeleton001, UI001Code, Skeleton001Code, UI001CSS, Skeleton001CS
 import { UI002, Skeleton002, UI002Code, Skeleton002Code } from '../components/dumps/002'
 import { UI003, Skeleton003, UI003Code, Skeleton003Code } from '../components/dumps/003'
 import { UI004, Skeleton004, UI004Code, Skeleton004Code } from '../components/dumps/004'
-import { UI005, UI005Code, UI005CSS } from '../components/dumps/005'
+import { UI005, Skeleton005, UI005Code, Skeleton005Code, UI005CSS } from '../components/dumps/005'
 
 export const Data = [
   {
@@ -76,7 +76,9 @@ export const Data = [
     label: 'Minimal Card UI',
     desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit molestiae corrupti ipsam fugit velit asperiores.',
     UI: UI005,
+    Skeleton: Skeleton005,
     sourceCodeJSX: UI005Code,
+    skeletonSourceCodeJSX: Skeleton005Code,
     sourceCodeCSS: UI005CSS,
     credits: 'https://www.instagram.com/p/DG3fADRpWi6/',
   },
