@@ -14,12 +14,14 @@ const Canvas = () => {
       className='relative h-screen overflow-hidden bg-neutral-100 grid place-content-center'
     >
       {/* ------------------------ PLAYGROUND ------------------------ */}
-      <div className='flex w-[24rem] p-[0.2px] pb-3 rounded-[21px] border'>
-        <div className='flex flex-col justify-end gap-4 items-end size-full rounded-[20.8px] p-2 bg-neutral-200/60 border'>
+      <div className='flex w-[24rem] p-[0.2px] pb-3 rounded-[21px] border bg-red-500'>
+        <div className='flex flex-col justify-end gap-4 items-end size-full rounded-[20.8px] p-2 bg-gradient-to-b from-[#ffffff] to-[#dadada] border-2 border-white'>
           {/*  */}
-          <div className='relative flex flex-col items-center justify-between p-5 h-100 rounded-[16px] w-full bg-neutral-900 border'>
-            <div className='flex flex-col gap-[2px] absolute top-1/2 -translate-y-1/2 w-[98.5%] h-[98.5%] rounded-[14px] overflow-hidden border border-neutral-600'>
-              {Array.from({ length: 120 }, (_, i) => (
+          <div className='relative flex flex-col items-center justify-between p-5 h-100 rounded-[16px] w-full bg-neutral-900 overflow-hidden'>
+            {/* <div className='absolute top-0 left-0 w-54 h-38 bg-white/20 blur-[12rem]' /> */}
+            <div className='absolute -bottom-8 -translate-x-1/2 left-1/2 w-[140%] h-30 bg-black/80 blur-[3rem] z-30 -rotate-12' />
+            <div className='flex flex-col justify-between absolute top-1/2 -translate-y-1/2 w-[98.5%] h-[98.5%] rounded-[14px] overflow-hidden border-t-[1.2px] border-l-[1.2px] border-[#545454]'>
+              {Array.from({ length: 112 }, (_, i) => (
                 <div key={i} className='w-full h-[1.5px] bg-neutral-800/80' />
               ))}
             </div>
@@ -64,16 +66,16 @@ const Canvas = () => {
             </div>
           </div>
           {/*  */}
-          <div className='w-full grid grid-cols-3 gap-[1.5px] p-[1.5px] rounded-2xl bg-neutral-900 overflow-hidden h-34'>
+          <div className='w-full grid grid-cols-3 gap-[1.5px] p-[1.5px] rounded-2xl bg-[#1d1d1d] overflow-hidden h-34'>
             <div className='flex items-center justify-center bg-[#e7e7e7] border-t-[1px] border-white rounded-l-[15px] rounded-r-sm'>
               <div className='size-13 flex items-center justify-center rounded-full border'>
                 <div className='size-4 bg-red-600/50 rounded-full border' />
               </div>
             </div>
-            <div className='flex items-center justify-center bg-gradient-to-b from-neutral-200 to-neutral-300 border-t-[1px] border-white rounded-sm'>
-              <div className='relative size-13 flex items-center justify-center rounded-full bg-neutral-400/30 overflow-hidden'>
-                <div className='size-3.5 bg-neutral-500 rounded-[2px] border z-10' />
-                <div className='absolute -bottom-4 bg-neutral-100/90 size-14 rounded-full border blur-sm' />
+            <div className='flex items-center justify-center bg-[#dadada] border-t-[1.2px] border-white rounded-sm'>
+              <div className='relative size-13 flex items-center justify-center rounded-full bg-[#bcb9ba] overflow-hidden'>
+                <div className='size-3.5 bg-[#808080] rounded-[2px] z-10' />
+                <div className='absolute -bottom-7 bg-[#efefef] h-17 w-19 rounded-full border blur-[10px]' />
               </div>
             </div>
             <div className='flex flex-col gap-[1.5px]'>
