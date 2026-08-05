@@ -15,8 +15,10 @@ const Canvas = () => {
     >
       {/* ------------------------ PLAYGROUND ------------------------ */}
       <div className='relative w-[24rem] isolate'>
-        <div className='relative z-10 flex w-full p-[0.2px] pb-3.5 rounded-[21px] bg-[#858585] shadow-[-9px_41px_100px_19px_rgba(0,_0,_0,_0.1)]'>
-          <div className='flex flex-col justify-end gap-4 items-end size-full rounded-[20.8px] p-2 bg-gradient-to-b from-[#ffffff] to-[#dadada] border-2 border-white'>
+        <div className='relative z-10 flex w-full p-[0.2px] pb-3.5 rounded-[21px] bg-gradient-to-b from-white to-[#858585] shadow-[-9px_41px_100px_19px_rgba(0,_0,_0,_0.1)] overflow-hidden'>
+          <div className='absolute bg-neutral-700/20 w-10 h-3 rounded-bl-lg rotate-24 -bottom-1.5 -left-1 blur-sm' />
+          <div className='absolute bg-neutral-700/20 w-10 h-3 rounded-bl-lg -rotate-24 -bottom-1.5 -right-1 blur-sm' />
+          <div className='flex flex-col justify-end gap-4 items-end size-full rounded-[20.8px] p-2 bg-gradient-to-b from-[#ffffff] to-[#dadada] border-2 border-white z-50'>
             {/*  */}
             <div className='relative flex flex-col items-center justify-between p-5.5 h-96 rounded-[13px] w-full bg-neutral-900 border-[1.2px] border-[#545454] overflow-hidden'>
               {/* <div className='absolute top-0 left-0 w-54 h-38 bg-white/20 blur-[12rem]' /> */}
@@ -54,7 +56,7 @@ const Canvas = () => {
               </div>
               {/*  */}
               <div className='w-full relative z-40'>
-                <span className='text-neutral-100 text-5xl font-light leading-none'>00:30:31</span>
+                <span className='text-neutral-200 text-5xl font-extralight tracking-wider inter-font leading-none'>02:19:23</span>
               </div>
             </div>
             {/*  */}
