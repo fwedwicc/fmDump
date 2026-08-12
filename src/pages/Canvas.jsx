@@ -15,12 +15,18 @@ const Canvas = () => {
     >
       {/* ------------------------ PLAYGROUND ------------------------ */}
       <div className='relative w-[24rem] isolate'>
-        <div className='relative z-10 flex w-full p-[0.2px] pb-3.5 rounded-[21px] bg-gradient-to-b from-white to-[#858585] shadow-[-9px_41px_100px_19px_rgba(0,_0,_0,_0.1)] overflow-hidden'>
+        <div className='relative z-10 flex w-full p-[0.2px] pb-3.5 rounded-[21px] bg-gradient-to-b from-white to-[#858585] shadow-[-9px_41px_100px_19px_rgba(0,_0,_0,_0.1)]'>
+          <div className='absolute top-24 -right-[9px] h-12 w-2.25 bg-gradient-to-b from-white to-neutral-500/80 flex flex-col justify-between rounded-r-xs'>
+            <div className='w-[2px] absolute left-0 h-full bg-gradient-to-t from-neutral-700 via-neutral-400 to-neutral-300 z-40' />
+            {Array.from({ length: 33 }, (_, i) => (
+              <div className='h-[0.7px] w-full bg-neutral-500/20 z-50' />
+            ))}
+          </div>
           <div className='absolute bg-neutral-700/20 w-10 h-3 rounded-bl-lg rotate-24 -bottom-1.5 -left-1 blur-sm' />
           <div className='absolute bg-neutral-700/20 w-10 h-3 rounded-bl-lg -rotate-24 -bottom-1.5 -right-1 blur-sm' />
-          <div className='flex flex-col justify-end gap-4 items-end size-full rounded-[20.8px] p-2 bg-gradient-to-b from-[#ffffff] to-[#dadada] border-2 border-white z-50'>
+          <div className='relative flex flex-col justify-end gap-4 items-end size-full rounded-[20.8px] p-1.75 bg-gradient-to-b from-[#ffffff] to-[#dadada] border-2 border-white z-50'>
             {/*  */}
-            <div className='relative flex flex-col items-center justify-between p-5.5 h-96 rounded-[13px] w-full bg-neutral-900 border-[1.2px] border-[#545454] overflow-hidden'>
+            <div className='relative flex flex-col items-center justify-between p-5.5 h-100 rounded-[13px] w-full bg-neutral-900 border-[1.2px] border-[#545454] overflow-hidden'>
               {/* <div className='absolute top-0 left-0 w-54 h-38 bg-white/20 blur-[12rem]' /> */}
               <div className='absolute -bottom-8 -translate-x-1/2 left-1/2 w-[140%] h-30 bg-black/80 blur-[3rem] z-30 -rotate-12' />
               <div className='flex flex-col justify-between absolute top-1/2 -translate-y-1/2 w-[98.5%] h-[98.5%] rounded-[11px] overflow-hidden border-t-[1.2px] border-l-[1.2px] border-[#545454]'>
@@ -30,10 +36,10 @@ const Canvas = () => {
               </div>
               {/*  */}
               <div className='flex justify-between w-full'>
-                <div className='flex items-center gap-7 relative z-20'>
+                <div className='flex items-center gap-6 relative z-20'>
                   <p className='text-neutral-400 leading-none text-[10px]'>11:11 PM</p>
                   <div className='flex items-center gap-1'>
-                    <div className='size-1.5 rounded-full bg-red-400 border' />
+                    <div className='size-1.5 rounded-full bg-red-500 border' />
                     <p className='text-neutral-400/70 leading-none text-[10px]'>NEW RECORDING</p>
                   </div>
                 </div>
