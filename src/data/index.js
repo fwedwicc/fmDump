@@ -1,11 +1,12 @@
 // Thumbnail Imports
-import { Thumbnail001, Thumbnail002, Thumbnail003, Thumbnail004, Thumbnail005 } from '../assets/thumbnails'
+import { Thumbnail001, Thumbnail002, Thumbnail003, Thumbnail004, Thumbnail005, Thumbnail006 } from '../assets/thumbnails'
 // Data Imports
 import { UI001, Skeleton001, UI001Code, Skeleton001Code, UI001CSS, Skeleton001CSS } from '../components/dumps/001'
 import { UI002, Skeleton002, UI002Code, Skeleton002Code } from '../components/dumps/002'
 import { UI003, Skeleton003, UI003Code, Skeleton003Code } from '../components/dumps/003'
 import { UI004, Skeleton004, UI004Code, Skeleton004Code } from '../components/dumps/004'
 import { UI005, Skeleton005, UI005Code, Skeleton005Code, UI005CSS } from '../components/dumps/005'
+import { UI006, UI006Code, UI006CSS } from '../components/dumps/006'
 
 export const Data = [
   {
@@ -81,5 +82,20 @@ export const Data = [
     skeletonSourceCodeJSX: Skeleton005Code,
     sourceCodeCSS: UI005CSS,
     credits: 'https://www.instagram.com/p/DG3fADRpWi6/',
+  },
+  {
+    id: 'ui006',
+    to: '/view/ui006',
+    thumbnail: Thumbnail006,
+    title: '006',
+    label: 'Recording Device',
+    desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit molestiae corrupti ipsam fugit velit asperiores.',
+    UI: UI006,
+    // Skeleton: Skeleton005,
+    sourceCodeJSX: UI006Code,
+    // skeletonSourceCodeJSX: Skeleton005Code,
+    sourceCodeCSS: UI006CSS,
+    credits: '@',
+    reference: 'https://ph.pinterest.com/pin/75716837484460635/',
   },
 ]

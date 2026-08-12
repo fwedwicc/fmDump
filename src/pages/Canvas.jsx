@@ -11,7 +11,8 @@ const Canvas = () => {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 0.4, ease: 'easeOut' }}
-      className='relative h-screen overflow-hidden bg-gradient-to-b from-[#e7e7e7] to-[#dcdcdc] grid place-content-center'
+      // bg-gradient-to-b from-[#e7e7e7] to-[#dcdcdc]
+      className='relative h-screen overflow-hidden grid place-content-center'
     >
       {/* ------------------------ PLAYGROUND ------------------------ */}
       <div className='relative w-[24rem] isolate'>
@@ -27,7 +28,6 @@ const Canvas = () => {
           <div className='relative flex flex-col justify-end gap-4 items-end size-full rounded-[20.8px] p-1.75 bg-gradient-to-b from-[#ffffff] to-[#dadada] border-2 border-white z-50'>
             {/*  */}
             <div className='relative flex flex-col items-center justify-between p-5.5 h-100 rounded-[13px] w-full bg-neutral-900 border-[1.2px] border-[#545454] overflow-hidden'>
-              {/* <div className='absolute top-0 left-0 w-54 h-38 bg-white/20 blur-[12rem]' /> */}
               <div className='absolute -bottom-8 -translate-x-1/2 left-1/2 w-[140%] h-30 bg-black/80 blur-[3rem] z-30 -rotate-12' />
               <div className='flex flex-col justify-between absolute top-1/2 -translate-y-1/2 w-[98.5%] h-[98.5%] rounded-[11px] overflow-hidden border-t-[1.2px] border-l-[1.2px] border-[#545454]'>
                 {Array.from({ length: 116 }, (_, i) => (
@@ -108,7 +108,7 @@ const Canvas = () => {
             </div>
           </div>
         </div>
-        <div className='absolute -left-60 top-0 h-full w-[150%] rounded-full bg-neutral-400/30 blur-[60px]' />
+        <div className='absolute -left-60 top-0 h-full w-[150%] rounded-full bg-neutral-400/10 blur-[60px]' />
         <div className='absolute inset-x-0 -bottom-12 z-0 pointer-events-none'>
           <div className='absolute left-1/2 -bottom-2 h-28 w-[92%] -translate-x-1/2 rounded-full bg-neutral-700/60 blur-[32px]' />
           <div className='absolute left-1/2 -top-16 h-3 w-[70%] -translate-x-1/2 rounded-full bg-neutral-800 blur-[24px]' />
