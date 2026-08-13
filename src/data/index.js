@@ -6,7 +6,7 @@ import { UI002, Skeleton002, UI002Code, Skeleton002Code } from '../components/du
 import { UI003, Skeleton003, UI003Code, Skeleton003Code } from '../components/dumps/003'
 import { UI004, Skeleton004, UI004Code, Skeleton004Code } from '../components/dumps/004'
 import { UI005, Skeleton005, UI005Code, Skeleton005Code, UI005CSS } from '../components/dumps/005'
-import { UI006, UI006Code, UI006CSS } from '../components/dumps/006'
+import { UI006, Skeleton006, UI006Code, Skeleton006Code, UI006CSS } from '../components/dumps/006'
 
 export const Data = [
   {
@@ -91,9 +91,9 @@ export const Data = [
     label: 'Recording Device',
     desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit molestiae corrupti ipsam fugit velit asperiores.',
     UI: UI006,
-    // Skeleton: Skeleton005,
+    Skeleton: Skeleton006,
     sourceCodeJSX: UI006Code,
-    // skeletonSourceCodeJSX: Skeleton005Code,
+    skeletonSourceCodeJSX: Skeleton006Code,
     sourceCodeCSS: UI006CSS,
     credits: '@',
     reference: 'https://ph.pinterest.com/pin/75716837484460635/',
