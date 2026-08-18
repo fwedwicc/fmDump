@@ -15,7 +15,7 @@ const Canvas = () => {
       className='relative h-screen overflow-hidden grid place-content-center'
     >
       {/* ------------------------ PLAYGROUND ------------------------ */}
-
+      <p className='text-sm text-black/40'>Working...</p>
       {/* ------------------------ // PLAYGROUND ------------------------ */}
       {/* IGNORE: Back Button */}
       <div className='fixed md:bottom-6 bottom-4 md:right-6 right-4'>
