@@ -15,7 +15,10 @@ const Canvas = () => {
       className='relative h-screen overflow-hidden grid place-content-center'
     >
       {/* ------------------------ PLAYGROUND ------------------------ */}
-      <p className='text-sm text-black/40'>Working...</p>
+      <div className='flex flex-col items-center gap-4'>
+        <img src="https://imgs.search.brave.com/9yGZGavieHxiT7ON4lFlWdSZGvG6q6MwbUHM-O3KRsk/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9naWZk/Yi5jb20vaW1hZ2Vz/L3RodW1ibmFpbC90/eXBpbmctY2F0LXR5/cGluZy1naWYtbG5z/emNvN2N5ZmwwcHNh/Yi5naWY.gif" alt="Cat Gif" className='w-40 rounded-xl h-auto' />
+        <p className='text-sm text-center'>fred is currently working...</p>
+      </div>
       {/* ------------------------ // PLAYGROUND ------------------------ */}
       {/* IGNORE: Back Button */}
       <div className='fixed md:bottom-6 bottom-4 md:right-6 right-4'>
