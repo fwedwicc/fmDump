@@ -15,9 +15,35 @@ const Canvas = () => {
       className='relative h-screen overflow-hidden grid place-content-center'
     >
       {/* ------------------------ PLAYGROUND ------------------------ */}
-      <div className='flex flex-col items-center gap-4'>
-        <img src="https://imgs.search.brave.com/9yGZGavieHxiT7ON4lFlWdSZGvG6q6MwbUHM-O3KRsk/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9naWZk/Yi5jb20vaW1hZ2Vz/L3RodW1ibmFpbC90/eXBpbmctY2F0LXR5/cGluZy1naWYtbG5z/emNvN2N5ZmwwcHNh/Yi5naWY.gif" alt="Cat Gif" className='w-40 rounded-xl h-auto' />
-        <p className='text-sm text-center'>fred is currently working...</p>
+      <div className='grid grid-cols-3 gap-4 min-w-[10rem]'>
+        {/* Balls */}
+        <div className='w-full border border-neutral-200 col-span-full grid grid-cols-4 place-content-center gap-2 p-2'>
+          <div className='size-14 rounded-full bg-neutral-200'></div>
+          <div className='size-14 rounded-full bg-neutral-200'></div>
+          <div className='size-14 rounded-full bg-neutral-200'></div>
+          <div className='size-14 rounded-full bg-neutral-200'></div>
+        </div>
+        <div className='col-span-full flex item-center gap-2'>
+          {/* Locked/Unlock */}
+          <div className='col-span-3 border border-neutral-200 h-14 w-full'>
+
+          </div>
+          {/* Message Button */}
+          <button className='flex-nowrap size-14 p-[1px] bg-gradient-to-b from-zinc-300 to-zinc-300 rounded-full shadow-xl shadow-zinc-300/40'>
+            <div className='size-full p-1 rounded-full bg-gradient-to-b from-zinc-100 via-zinc-400 to-teal-500/20'>
+              <div className='size-full flex items-center justify-center bg-gradient-to-b from-zinc-200 via-zinc-200 to-zinc-300 rounded-full'>
+              </div>
+            </div>
+          </button>
+        </div>
+        {/* Generate Button */}
+        <button className='col-span-full p-[1px] bg-gradient-to-b from-zinc-300 to-zinc-300 rounded-full shadow-xl shadow-zinc-300/40'>
+          <div className='p-1 rounded-full bg-gradient-to-b from-zinc-100 via-zinc-400 to-teal-500/20'>
+            <div className='w-full py-4 flex items-center justify-center bg-gradient-to-b from-zinc-200 via-zinc-200 to-zinc-300 rounded-full'>
+              <p>.</p>
+            </div>
+          </div>
+        </button>
       </div>
       {/* ------------------------ // PLAYGROUND ------------------------ */}
       {/* IGNORE: Back Button */}
