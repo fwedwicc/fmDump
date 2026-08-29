@@ -15,15 +15,20 @@ const Canvas = () => {
       className='relative h-screen overflow-hidden grid place-content-center'
     >
       {/* ------------------------ PLAYGROUND ------------------------ */}
-      <div className='relative grid grid-cols-2 gap-1 w-full min-w-md h-130 border rounded-2xl overflow-hidden'>
-        <div className='flex justify-start size-full border rounded-l-2xl py-0.5 pl-0.5 rounded-r-sm'>
-          <div className='h-full bg-green-500 rounded-l-xl rounded-r-sm w-50'></div>
+      <div className='relative grid grid-cols-2 gap-0.5 w-full min-w-md h-130 rounded-3xl overflow-hidden bg-gradient-to-b from-[#EAEBEB] to-[#878788] shadow-2xl shadow-neutral-950/60'>
+        <div className='flex justify-start size-full rounded-l-3xl py-0.75 pl-0.75 rounded-r-sm bg-neutral-600'>
+          <div className='h-full bg-neutral-800 rounded-l-[22px] rounded-r-sm w-51' />
         </div>
-        <div className='flex justify-end size-full border rounded-r-2xl py-0.5 pr-0.5 rounded-l-sm'>
-          <div className='h-full bg-green-500 rounded-r-xl rounded-l-sm w-50'></div>
+        <div className='flex justify-end size-full rounded-r-3xl py-0.75 pr-0.75 rounded-l-sm bg-neutral-600'>
+          <div className='h-full bg-neutral-800 rounded-r-[22px] rounded-l-sm w-51' />
         </div>
         <div className='absolute w-full h-full p-1'>
-          <div className='size-full bg-green-500 rounded-xl'></div>
+          <div className='size-full bg-neutral-800 rounded-2xl p-1.5'>
+            <div className='flex flex-col size-full bg-neutral-950 rounded-[16px] overflow-hidden'>
+              <div className='w-full flex-1 border border-red-500'></div>
+              <div className='w-full h-8 border border-red-500'></div>
+            </div>
+          </div>
         </div>
       </div>
       {/* ------------------------ // PLAYGROUND ------------------------ */}
