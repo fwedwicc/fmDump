@@ -25,8 +25,16 @@ const Canvas = () => {
         <div className='absolute w-full h-full p-1'>
           <div className='size-full bg-neutral-800 rounded-2xl p-1.5'>
             <div className='flex flex-col size-full bg-neutral-950 rounded-[16px] overflow-hidden'>
-              <div className='w-full flex-1 border border-red-500'></div>
-              <div className='w-full h-8 border border-red-500'></div>
+              <div className='relative w-full h-full flex-1 flex-col bg-amber-500'>
+                <img src='https://plus.unsplash.com/premium_photo-1728566648330-7ba0d675f3c6?q=80&w=715&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D' alt='sample' className='size-full object-cover absolute'></img>
+                <div className='absolute h-4 w-full bg-black'>
+
+                </div>
+                <div className='flex-1 h-full border border-green-500'></div>
+              </div>
+              <div className='w-full h-8 bg-red-400'>
+
+              </div>
             </div>
           </div>
         </div>
