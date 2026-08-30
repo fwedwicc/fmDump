@@ -5,6 +5,7 @@ import Tooltip from './Tooltip'
 import ViewWrapper from './ViewWrapper'
 import InfoModal from './InfoModal'
 import SourceCodeModal from './SourceCodeModal'
+import Ruler from './Ruler'
 
 export {
   Header,
@@ -14,4 +15,5 @@ export {
   ViewWrapper,
   InfoModal,
   SourceCodeModal,
+  Ruler
 }

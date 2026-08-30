@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { Link, useParams } from 'react-router-dom'
 import { AnimatePresence, motion } from 'framer-motion'
-import { ViewWrapper, InfoModal, SourceCodeModal, Tooltip } from '../components'
+import { ViewWrapper, InfoModal, SourceCodeModal, Tooltip, Ruler } from '../components'
 import { TbSmartHome, TbInfoSquareRounded, TbStar, TbStarFilled } from "react-icons/tb"
 import { Data } from '../data'
 
@@ -28,6 +28,7 @@ const ViewUI = () => {
       transition={{ duration: 0.3, ease: 'easeOut' }}
       className='relative h-screen overflow-hidden flex-center'
     >
+      {/* <Ruler /> */}
       <ViewWrapper designWidth={1024}>
         <AnimatePresence mode='wait'>
           {ComponentToRender ? (
