@@ -56,14 +56,16 @@ const Canvas = () => {
                       <p className='text-white text-[9px] leading-none'>.</p>
                     </div>
                   </div>
-                  <div className='flex items-center justify-between border border-amber-400'>
+                  <div className='flex items-center justify-between'>
                     <div className='flex items-center gap-2'>
                       <p className='text-black text-sm leading-none'>.</p>
                       <p className='text-black text-sm leading-none'>.</p>
                     </div>
-                    <div className='flex items-center gap-2'>
-                      <p className='text-black text-sm leading-none'>.</p>
-                      <p className='text-black text-sm leading-none'>.</p>
+                    <div className='flex items-center gap-2.5 bg-neutral-900 px-1.25 py-[4.5px] pr-4.5 rounded-full'>
+                      <div className='px-5 py-1.75 bg-neutral-100 rounded-full'>
+                        <p className='text-neutral-900 font-bold text-[9px] leading-none'>Home</p>
+                      </div>
+                      <p className='text-white text-[9px] leading-none'>Community</p>
                     </div>
                   </div>
                 </div>
