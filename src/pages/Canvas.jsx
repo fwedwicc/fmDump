@@ -2,7 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import { motion } from 'framer-motion'
 import { Tooltip } from '../components'
-import { TbSmartHome, TbMenu2, TbGridDots, TbSquareRounded, TbChevronLeft, TbBatteryVerticalFilled } from "react-icons/tb"
+import { TbSmartHome, TbMenu2, TbGridDots, TbSquareRounded, TbChevronLeft, TbHeartFilled, TbPencil, TbSquareRoundedChevronsDown } from "react-icons/tb"
 import { PiWifiHighFill, PiCellSignalFullFill } from "react-icons/pi"
 import { BiSolidBattery } from "react-icons/bi"
 
@@ -19,10 +19,10 @@ const Canvas = () => {
       {/* ------------------------ PLAYGROUND ------------------------ */}
       <div className='relative grid grid-cols-2 gap-0.5 w-full min-w-[27rem] h-130 rounded-3xl overflow-hidden bg-gradient-to-b from-[#EAEBEB] to-[#878788] shadow-2xl shadow-neutral-950/60'>
         <div className='flex justify-start size-full rounded-l-3xl py-0.5 pl-0.5 rounded-r-sm bg-neutral-600'>
-          <div className='h-full bg-neutral-800 rounded-l-[22px] rounded-r-sm w-49' />
+          <div className='h-full bg-neutral-800 rounded-l-[22px] rounded-r-sm w-50' />
         </div>
         <div className='flex justify-end size-full rounded-r-3xl py-0.5 pr-0.5 rounded-l-sm bg-neutral-600'>
-          <div className='h-full bg-neutral-800 rounded-r-[22px] rounded-l-sm w-49' />
+          <div className='h-full bg-neutral-800 rounded-r-[22px] rounded-l-sm w-50' />
         </div>
         <div className='absolute w-full h-full p-1'>
           <div className='size-full bg-neutral-800 rounded-[24px] p-1'>
@@ -39,8 +39,8 @@ const Canvas = () => {
                     <BiSolidBattery className='size-2.5 text-neutral-200 -rotate-90' />
                   </div>
                 </div>
-                <div className='flex flex-col justify-between h-full p-5 pt-10 relative z-50'>
-                  <div className='space-y-2'>
+                <div className='flex flex-col justify-between h-full p-4.25 pt-10 relative z-50'>
+                  <div className='space-y-3'>
                     <div className='flex items-center justify-between border border-amber-400'>
                       <p className='text-white text-base leading-none'>Planto</p>
                       <div className='flex items-center gap-2'>
@@ -48,12 +48,24 @@ const Canvas = () => {
                         <p className='text-white text-[9px] leading-none'>.</p>
                       </div>
                     </div>
-                    <div className='flex items-center justify-between border border-amber-400'>
+                    <div className='flex items-center justify-between'>
                       <div className='flex items-center gap-2'>
-                        <p className='text-white text-[9px] leading-none'>.</p>
-                        <p className='text-white text-[9px] leading-none'>.</p>
+                        <div className='flex items-center rounded-full bg-black/40 divide-x divide-neutral-400/30'>
+                          <div className='flex items-center justify-center pr-1.5 pl-2.5 py-1.25 overflow-hidden'>
+                            <p className='text-neutral-300 text-xs leading-none'>Ivy</p>
+                          </div>
+                          <div className='flex items-center justify-center pr-2.5 pl-2 py-1.25 overflow-hidden'>
+                            <TbPencil className='size-4 text-neutral-300 stroke-[1.5px]' />
+                          </div>
+                        </div>
+                        <div className='flex items-center gap-1 py-1.75 px-2.75 pr-3 rounded-full bg-black/50'>
+                          <TbHeartFilled className='size-3.25 text-[#DF732D]' />
+                          <p className='text-neutral-300 text-xs leading-none'>82%</p>
+                        </div>
                       </div>
-                      <p className='text-white text-[9px] leading-none'>.</p>
+                      <div className='size-7 flex items-center justify-center rounded-full bg-neutral-700/40'>
+                        <TbSquareRoundedChevronsDown className='size-5 text-neutral-300 stroke-[1.5px]' />
+                      </div>
                     </div>
                   </div>
                   <div className='flex items-center justify-between'>
