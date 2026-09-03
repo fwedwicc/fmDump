@@ -2,8 +2,9 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import { motion } from 'framer-motion'
 import { Tooltip } from '../components'
-import { TbSmartHome, TbMenu2, TbGridDots, TbSquareRounded, TbChevronLeft, TbHeartFilled, TbPencil, TbSquareRoundedChevronsDown, TbSettings, TbBell, TbChevronRight } from "react-icons/tb"
+import { TbSmartHome, TbMenu2, TbGridDots, TbSquareRounded, TbChevronLeft, TbHeartFilled, TbPencil, TbSquareRoundedChevronsDown, TbSettings, TbBell, TbChevronRight, TbSun, TbTemperature } from "react-icons/tb"
 import { PiWifiHighFill, PiCellSignalFullFill } from "react-icons/pi"
+import { MdOutlineWaterDrop } from "react-icons/md"
 import { BiSolidBattery } from "react-icons/bi"
 
 // Recording Device
@@ -17,7 +18,7 @@ const Canvas = () => {
       className='relative h-screen overflow-hidden grid place-content-center'
     >
       {/* ------------------------ PLAYGROUND ------------------------ */}
-      <div className='relative grid grid-cols-2 gap-0.5 w-full min-w-[28rem] h-130 rounded-3xl overflow-hidden bg-gradient-to-b from-[#EAEBEB] to-[#878788] shadow-2xl shadow-neutral-950/60'>
+      <div className='relative grid grid-cols-2 gap-0.5 w-full min-w-[28rem] h-133 rounded-3xl overflow-hidden bg-gradient-to-b from-[#EAEBEB] to-[#878788] shadow-2xl shadow-neutral-950/60'>
         <div className='flex justify-start size-full rounded-l-3xl py-0.5 pl-0.5 rounded-r-sm bg-neutral-600'>
           <div className='h-full bg-neutral-800 rounded-l-[22px] rounded-r-sm w-51.75' />
         </div>
@@ -39,7 +40,7 @@ const Canvas = () => {
                     <BiSolidBattery className='size-2.5 text-neutral-200 -rotate-90' />
                   </div>
                 </div>
-                <div className='flex flex-col justify-between h-full p-4.25 pt-10 relative z-50'>
+                <div className='flex flex-col justify-between h-full p-4.5 pt-10 relative z-50'>
                   <div className='space-y-2.5'>
                     <div className='flex items-center justify-between -mt-3'>
                       <p className='text-neutral-300 text-[17px] leading-none tracking-tight'>pl<span className='montecarlo-font text-[28px] leading-none'>a</span><span className='italic leading-none'>n</span>to</p>
@@ -52,7 +53,7 @@ const Canvas = () => {
                       <div className='flex items-center gap-2'>
                         <div className='flex items-center rounded-full bg-black/40 divide-x divide-neutral-400/30'>
                           <div className='flex items-center justify-center pr-1.5 pl-2.5 py-1.25 overflow-hidden'>
-                            <p className='text-neutral-300 text-xs leading-none'>Ivy</p>
+                            <p className='text-neutral-300 text-xs leading-none'>Fred</p>
                           </div>
                           <div className='flex items-center justify-center pr-2.5 pl-2 py-1.25 overflow-hidden'>
                             <TbPencil className='size-4 text-neutral-300 stroke-[1.5px]' />
@@ -71,39 +72,39 @@ const Canvas = () => {
                   <div className='flex items-end justify-between'>
                     <div className='relative flex flex-col items-center gap-2.25 p-3 min-w-[7rem] bg-white rounded-xl'>
                       <TbChevronRight className='size-4 stroke-[2px] text-neutral-800 absolute right-1.5 top-2.25' />
-                      <div className='flex items-center justify-between w-full mb-0.5'>
+                      <div className='flex items-center justify-between w-full mb-1'>
                         <p className='leading-none font-bold text-8px] text-neutral-800'>Condition</p>
                       </div>
                       <div className='flex items-center w-full gap-2'>
-                        <div className='flex items-center justify-center p-1 bg-red-500 text-white rounded-full'>
-                          <TbChevronRight className='size-4.5 stroke-[2px]' />
+                        <div className='flex items-center justify-center size-[26.5px] bg-[#6F888B] text-white rounded-full'>
+                          <MdOutlineWaterDrop className='size-4.25' />
                         </div>
-                        <div className='space-y-0.25'>
+                        <div className='space-y-0.5'>
                           <p className='text-[7px] text-neutral-400 leading-none'>Water</p>
-                          <p className='text-[12px] font-medium leading-none'>90%</p>
+                          <p className='text-[11.5px] font-medium leading-none'>90%</p>
                         </div>
                       </div>
                       <div className='flex items-center w-full gap-2'>
-                        <div className='flex items-center justify-center p-1 bg-red-500 text-white rounded-full'>
-                          <TbChevronRight className='size-4.5 stroke-[2px]' />
+                        <div className='flex items-center justify-center size-[26.5px] bg-[#EC9967] text-white rounded-full'>
+                          <TbSun className='size-4.25 stroke-[2px]' />
                         </div>
-                        <div className='space-y-0.25'>
+                        <div className='space-y-0.5'>
                           <p className='text-[7px] text-neutral-400 leading-none'>Light</p>
-                          <p className='text-[12px] font-medium leading-none'>30%</p>
+                          <p className='text-[11.5px] font-medium leading-none'>30%</p>
                         </div>
                       </div>
                       <div className='flex items-center w-full gap-2'>
-                        <div className='flex items-center justify-center p-1 bg-red-500 text-white rounded-full'>
-                          <TbChevronRight className='size-4.5 stroke-[2px]' />
+                        <div className='flex items-center justify-center size-[26.5px] bg-[#9CA88D] text-white rounded-full'>
+                          <TbTemperature className='size-4.25 stroke-[2px]' />
                         </div>
-                        <div className='space-y-0.25'>
+                        <div className='space-y-0.5'>
                           <p className='text-[7px] text-neutral-400 leading-none'>Temperture</p>
-                          <p className='text-[12px] font-medium leading-none'>24°</p>
+                          <p className='text-[11.5px] font-medium leading-none'>24°</p>
                         </div>
                       </div>
                     </div>
                     <div className='flex items-center gap-2.5 bg-neutral-900 px-1.25 py-[4.5px] pr-4.5 rounded-full'>
-                      <div className='px-4.5 py-1.75 bg-neutral-100 rounded-full'>
+                      <div className='px-5 py-[7.5px] bg-neutral-100 rounded-full'>
                         <p className='text-neutral-900 font-bold text-[9px] leading-none'>Home</p>
                       </div>
                       <p className='text-white text-[9px] leading-none'>Community</p>
@@ -111,12 +112,12 @@ const Canvas = () => {
                   </div>
                 </div>
               </div>
-              <div className='flex items-center justify-between w-full px-8 h-7.5 bg-neutral-900'>
-                <TbGridDots className='size-3.25 stroke-[2px] text-neutral-50' />
+              <div className='flex items-center justify-between w-full px-8 h-7.75 bg-neutral-900'>
+                <TbGridDots className='size-3.5 stroke-[2px] text-neutral-50' />
                 <div className='flex items-center gap-6'>
-                  <TbMenu2 className='size-3.25 stroke-[2px] text-neutral-50 rotate-90' />
-                  <TbSquareRounded className='size-3.25 stroke-[2px] text-neutral-50' />
-                  <TbChevronLeft className='size-3.25 stroke-[2px] text-neutral-50' />
+                  <TbMenu2 className='size-3.5 stroke-[2px] text-neutral-50 rotate-90' />
+                  <TbSquareRounded className='size-3.5 stroke-[2px] text-neutral-50' />
+                  <TbChevronLeft className='size-3.5 stroke-[2px] text-neutral-50' />
                 </div>
               </div>
             </div>
