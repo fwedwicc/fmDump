@@ -2,7 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import { motion } from 'framer-motion'
 import { Tooltip } from '../components'
-import { TbSmartHome, TbMenu2, TbGridDots, TbSquareRounded, TbChevronLeft, TbHeartFilled, TbPencil, TbSquareRoundedChevronsDown } from "react-icons/tb"
+import { TbSmartHome, TbMenu2, TbGridDots, TbSquareRounded, TbChevronLeft, TbHeartFilled, TbPencil, TbSquareRoundedChevronsDown, TbSettings, TbBell } from "react-icons/tb"
 import { PiWifiHighFill, PiCellSignalFullFill } from "react-icons/pi"
 import { BiSolidBattery } from "react-icons/bi"
 
@@ -40,12 +40,12 @@ const Canvas = () => {
                   </div>
                 </div>
                 <div className='flex flex-col justify-between h-full p-4.25 pt-10 relative z-50'>
-                  <div className='space-y-3'>
-                    <div className='flex items-center justify-between border border-amber-400'>
-                      <p className='text-white text-base leading-none'>Planto</p>
+                  <div className='space-y-2.5'>
+                    <div className='flex items-center justify-between -mt-3'>
+                      <p className='text-neutral-300 text-[17px] leading-none tracking-tight'>pl<span className='montecarlo-font text-[28px] leading-none'>a</span><span className='italic leading-none'>n</span>to</p>
                       <div className='flex items-center gap-2'>
-                        <p className='text-white text-[9px] leading-none'>.</p>
-                        <p className='text-white text-[9px] leading-none'>.</p>
+                        <TbBell className='size-4.5 text-neutral-300 stroke-[1.5px]' />
+                        <TbSettings className='size-4.5 text-neutral-300 stroke-[1.5px]' />
                       </div>
                     </div>
                     <div className='flex items-center justify-between'>
@@ -63,7 +63,7 @@ const Canvas = () => {
                           <p className='text-neutral-300 text-xs leading-none'>82%</p>
                         </div>
                       </div>
-                      <div className='size-7 flex items-center justify-center rounded-full bg-neutral-700/40'>
+                      <div className='size-7 flex items-center justify-center rounded-full bg-neutral-700/40 -mr-[4px]'>
                         <TbSquareRoundedChevronsDown className='size-5 text-neutral-300 stroke-[1.5px]' />
                       </div>
                     </div>
