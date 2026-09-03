@@ -2,7 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import { motion } from 'framer-motion'
 import { Tooltip } from '../components'
-import { TbSmartHome, TbMenu2, TbGridDots, TbSquareRounded, TbChevronLeft, TbHeartFilled, TbPencil, TbSquareRoundedChevronsDown, TbSettings, TbBell } from "react-icons/tb"
+import { TbSmartHome, TbMenu2, TbGridDots, TbSquareRounded, TbChevronLeft, TbHeartFilled, TbPencil, TbSquareRoundedChevronsDown, TbSettings, TbBell, TbChevronRight } from "react-icons/tb"
 import { PiWifiHighFill, PiCellSignalFullFill } from "react-icons/pi"
 import { BiSolidBattery } from "react-icons/bi"
 
@@ -17,12 +17,12 @@ const Canvas = () => {
       className='relative h-screen overflow-hidden grid place-content-center'
     >
       {/* ------------------------ PLAYGROUND ------------------------ */}
-      <div className='relative grid grid-cols-2 gap-0.5 w-full min-w-[27rem] h-130 rounded-3xl overflow-hidden bg-gradient-to-b from-[#EAEBEB] to-[#878788] shadow-2xl shadow-neutral-950/60'>
+      <div className='relative grid grid-cols-2 gap-0.5 w-full min-w-[28rem] h-130 rounded-3xl overflow-hidden bg-gradient-to-b from-[#EAEBEB] to-[#878788] shadow-2xl shadow-neutral-950/60'>
         <div className='flex justify-start size-full rounded-l-3xl py-0.5 pl-0.5 rounded-r-sm bg-neutral-600'>
-          <div className='h-full bg-neutral-800 rounded-l-[22px] rounded-r-sm w-50' />
+          <div className='h-full bg-neutral-800 rounded-l-[22px] rounded-r-sm w-51.75' />
         </div>
         <div className='flex justify-end size-full rounded-r-3xl py-0.5 pr-0.5 rounded-l-sm bg-neutral-600'>
-          <div className='h-full bg-neutral-800 rounded-r-[22px] rounded-l-sm w-50' />
+          <div className='h-full bg-neutral-800 rounded-r-[22px] rounded-l-sm w-51.75' />
         </div>
         <div className='absolute w-full h-full p-1'>
           <div className='size-full bg-neutral-800 rounded-[24px] p-1'>
@@ -68,13 +68,42 @@ const Canvas = () => {
                       </div>
                     </div>
                   </div>
-                  <div className='flex items-center justify-between'>
-                    <div className='flex items-center gap-2'>
-                      <p className='text-black text-sm leading-none'>.</p>
-                      <p className='text-black text-sm leading-none'>.</p>
+                  <div className='flex items-end justify-between'>
+                    <div className='relative flex flex-col items-center gap-2.25 p-3 min-w-[7rem] bg-white rounded-xl'>
+                      <TbChevronRight className='size-4 stroke-[2px] text-neutral-800 absolute right-1.5 top-2.25' />
+                      <div className='flex items-center justify-between w-full mb-0.5'>
+                        <p className='leading-none font-bold text-8px] text-neutral-800'>Condition</p>
+                      </div>
+                      <div className='flex items-center w-full gap-2'>
+                        <div className='flex items-center justify-center p-1 bg-red-500 text-white rounded-full'>
+                          <TbChevronRight className='size-4.5 stroke-[2px]' />
+                        </div>
+                        <div className='space-y-0.25'>
+                          <p className='text-[7px] text-neutral-400 leading-none'>Water</p>
+                          <p className='text-[12px] font-medium leading-none'>90%</p>
+                        </div>
+                      </div>
+                      <div className='flex items-center w-full gap-2'>
+                        <div className='flex items-center justify-center p-1 bg-red-500 text-white rounded-full'>
+                          <TbChevronRight className='size-4.5 stroke-[2px]' />
+                        </div>
+                        <div className='space-y-0.25'>
+                          <p className='text-[7px] text-neutral-400 leading-none'>Light</p>
+                          <p className='text-[12px] font-medium leading-none'>30%</p>
+                        </div>
+                      </div>
+                      <div className='flex items-center w-full gap-2'>
+                        <div className='flex items-center justify-center p-1 bg-red-500 text-white rounded-full'>
+                          <TbChevronRight className='size-4.5 stroke-[2px]' />
+                        </div>
+                        <div className='space-y-0.25'>
+                          <p className='text-[7px] text-neutral-400 leading-none'>Temperture</p>
+                          <p className='text-[12px] font-medium leading-none'>24°</p>
+                        </div>
+                      </div>
                     </div>
                     <div className='flex items-center gap-2.5 bg-neutral-900 px-1.25 py-[4.5px] pr-4.5 rounded-full'>
-                      <div className='px-5 py-1.75 bg-neutral-100 rounded-full'>
+                      <div className='px-4.5 py-1.75 bg-neutral-100 rounded-full'>
                         <p className='text-neutral-900 font-bold text-[9px] leading-none'>Home</p>
                       </div>
                       <p className='text-white text-[9px] leading-none'>Community</p>
