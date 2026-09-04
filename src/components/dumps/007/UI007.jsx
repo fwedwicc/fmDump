@@ -1,6 +1,9 @@
 import React from 'react'
 import './styles.css'
-import { TbFlareFilled } from "react-icons/tb"
+import { TbSmartHome, TbMenu2, TbGridDots, TbSquareRounded, TbChevronLeft, TbHeartFilled, TbPencil, TbSquareRoundedChevronsDown, TbSettings, TbBell, TbChevronRight, TbSun, TbTemperature } from "react-icons/tb"
+import { PiWifiHighFill, PiCellSignalFullFill } from "react-icons/pi"
+import { MdOutlineWaterDrop } from "react-icons/md"
+import { BiSolidBattery } from "react-icons/bi"
 
 const UI007 = () => {
     return (
