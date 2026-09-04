@@ -102,7 +102,7 @@ export const Data = [
   {
     id: 'ui007',
     to: '/view/ui007',
-    thumbnail: null,
+    thumbnail: 'https://placehold.co/30x30',
     title: '007',
     label: 'Gardening UI',
     desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit molestiae corrupti ipsam fugit velit asperiores.',
