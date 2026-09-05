@@ -1,6 +1,6 @@
 import React from 'react'
 import './styles.css'
-import { TbSmartHome, TbMenu2, TbGridDots, TbSquareRounded, TbChevronLeft, TbHeartFilled, TbPencil, TbSquareRoundedChevronsDown, TbSettings, TbBell, TbChevronRight, TbSun, TbTemperature } from "react-icons/tb"
+import { TbMenu2, TbGridDots, TbSquareRounded, TbChevronLeft, TbHeartFilled, TbPencil, TbSquareRoundedChevronsDown, TbSettings, TbBell, TbChevronRight, TbSun, TbTemperature } from "react-icons/tb"
 import { PiWifiHighFill, PiCellSignalFullFill } from "react-icons/pi"
 import { MdOutlineWaterDrop } from "react-icons/md"
 import { BiSolidBattery } from "react-icons/bi"
@@ -65,7 +65,7 @@ const UI007 = () => {
                                             <p className='leading-none font-bold text-8px] text-neutral-800'>Condition</p>
                                         </div>
                                         <div className='flex items-center w-full gap-2'>
-                                            <div className='flex items-center justify-center size-[26.5px] bg-[#6F888B] text-white rounded-full'>
+                                            <div className='grid place-content-center pl-[0.8px] size-[26.5px] bg-[#6F888B] text-white rounded-full'>
                                                 <MdOutlineWaterDrop className='size-4.25' />
                                             </div>
                                             <div className='space-y-0.5'>
@@ -74,7 +74,7 @@ const UI007 = () => {
                                             </div>
                                         </div>
                                         <div className='flex items-center w-full gap-2'>
-                                            <div className='flex items-center justify-center size-[26.5px] bg-[#EC9967] text-white rounded-full'>
+                                            <div className='grid place-content-center pl-[0.8px] size-[26.5px] bg-[#EC9967] text-white rounded-full'>
                                                 <TbSun className='size-4.25 stroke-[2px]' />
                                             </div>
                                             <div className='space-y-0.5'>
@@ -83,7 +83,7 @@ const UI007 = () => {
                                             </div>
                                         </div>
                                         <div className='flex items-center w-full gap-2'>
-                                            <div className='flex items-center justify-center size-[26.5px] bg-[#9CA88D] text-white rounded-full'>
+                                            <div className='grid place-content-center pl-[0.8px] size-[26.5px] bg-[#9CA88D] text-white rounded-full'>
                                                 <TbTemperature className='size-4.25 stroke-[2px]' />
                                             </div>
                                             <div className='space-y-0.5'>

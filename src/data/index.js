@@ -1,5 +1,5 @@
 // Thumbnail Imports
-import { Thumbnail001, Thumbnail002, Thumbnail003, Thumbnail004, Thumbnail005, Thumbnail006 } from '../assets/thumbnails'
+import { Thumbnail001, Thumbnail002, Thumbnail003, Thumbnail004, Thumbnail005, Thumbnail006, Thumbnail007 } from '../assets/thumbnails'
 // Data Imports
 import { UI001, Skeleton001, UI001Code, Skeleton001Code, UI001CSS, Skeleton001CSS } from '../components/dumps/001'
 import { UI002, Skeleton002, UI002Code, Skeleton002Code } from '../components/dumps/002'
@@ -103,7 +103,7 @@ export const Data = [
   {
     id: 'ui007',
     to: '/view/ui007',
-    thumbnail: 'https://placehold.co/30x30',
+    thumbnail: Thumbnail007,
     title: '007',
     label: 'Gardening UI',
     desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit molestiae corrupti ipsam fugit velit asperiores.',
