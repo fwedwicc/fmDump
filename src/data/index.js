@@ -7,7 +7,7 @@ import { UI003, Skeleton003, UI003Code, Skeleton003Code } from '../components/du
 import { UI004, Skeleton004, UI004Code, Skeleton004Code } from '../components/dumps/004'
 import { UI005, Skeleton005, UI005Code, Skeleton005Code, UI005CSS } from '../components/dumps/005'
 import { UI006, Skeleton006, UI006Code, Skeleton006Code, UI006CSS } from '../components/dumps/006'
-import { UI007, UI007Code, UI007CSS } from '../components/dumps/007'
+import { UI007, Skeleton007, UI007Code, Skeleton007Code, UI007CSS } from '../components/dumps/007'
 
 export const Data = [
   {
@@ -108,9 +108,9 @@ export const Data = [
     label: 'Gardening UI',
     desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit molestiae corrupti ipsam fugit velit asperiores.',
     UI: UI007,
-    // Skeleton: Skeleton007,
+    Skeleton: Skeleton007,
     sourceCodeJSX: UI007Code,
-    // skeletonSourceCodeJSX: Skeleton007Code,
+    skeletonSourceCodeJSX: Skeleton007Code,
     sourceCodeCSS: UI007CSS,
     credits: '@',
     reference: 'https://ph.pinterest.com/pin/75716837484460635/',
