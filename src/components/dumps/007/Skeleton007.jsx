@@ -30,9 +30,9 @@ const Skeleton007 = () => {
                             <div className='flex flex-col justify-between h-full p-4.5 pt-10 relative z-50'>
                                 <div className='space-y-2.5'>
                                     <div className='flex items-center justify-between -mt-3'>
-                                        <p className='text-neutral-300 text-[17px] leading-none tracking-tight'>pl<span className='montecarlo-font text-[28px] leading-none'>a</span><span className='italic leading-none'>n</span>to</p>
+                                        <p className='text-[17px] leading-none tracking-tight'>pl<span className='montecarlo-font text-[28px] leading-none'>a</span><span className='italic leading-none'>n</span>to</p>
                                         <div className='flex items-center gap-2'>
-                                            <TbBell className='size-4.5 text-neutral-300 stroke-[1.5px]' />
+                                            <TbBell className='size-4.5 stroke-[1.5px]' />
                                             <TbSettings className='size-4.5 text-neutral-300 stroke-[1.5px]' />
                                         </div>
                                     </div>
